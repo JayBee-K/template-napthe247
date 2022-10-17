@@ -1,48 +1,390 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <title>Template Nencer</title>
-    <meta name="description" content="Template Nencer">
-    <meta name="author" content="">
+	<title>Template Nencer</title>
+	<meta name="description" content="Template Nencer">
+	<meta name="author" content="">
 
-    <meta property="og:title" content="Template Nencer">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:description" content="Template Cpanel">
-    <meta property="og:image" content="">
+	<meta property="og:title" content="Template Nencer">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="Template Cpanel">
+	<meta property="og:image" content="">
 
-    <link rel="icon" href="/assets/images/favicon.png">
-    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
-    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./assets/plugins/fancyBox/jquery.fancybox.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+		  rel="stylesheet">
 
-    <style>
-        :root {
-            --primary-color: #DA2419;
-            --primary-hover: #c21c12;
-            --primary-rgb: 218, 36, 25;
+	<link rel="icon" href="/assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="/assets/images/favicon.png">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./assets/plugins/fancyBox/jquery.fancybox.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
 
-            --secondary-color: #0C5FA6;
-            --secondary-hover: #1E8EE8;
-            --secondary-rgb: 12, 95, 166;
-        }
-    </style>
+	<style>
+		:root {
+			--primary-color: #61c758;
+			--primary-hover: #2ab9a5;
+			--primary-rgb: 76, 187, 139;
+
+			--secondary-color: #dc3545;
+			--secondary-hover: #b41d2c;
+			--secondary-rgb: 220, 53, 69;
+		}
+	</style>
 </head>
 <body>
 
 <div id="header" class="header">
-    <div id="header-overlay" class="header-overlay"></div>
+	<div class="header-top">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="header-contact">
+						<a href="tel:9999999999" class="header-contact_item">
+							<b>Phone:</b>
+							9999999999
+						</a>
+						<a href="mailto:demo@gmail.com" class="header-contact_item">
+							<b>Email:</b>
+							demo@gmail.com
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="header-grid d-flex align-items-center justify-content-lg-end">
+						<div class="header-users d-flex align-items-center">
+							<div class="header-users_item">
+								<a href=""
+								   class="header-users_item--btn header-users_item--login theme-gradient theme-gradient_hover">
+									Đăng nhập
+								</a>
+							</div>
+							<div class="header-users_item">
+								<a href="" class="header-users_item--btn header-users_item--register">
+									Đăng ký
+								</a>
+							</div>
+						</div>
+						<div class="header-social d-flex align-items-center justify-content-lg-end">
+							<span>Hỗ trợ:</span>
+							<div class="header-social_grid d-flex align-items-center">
+								<a href="" class="header-social_grid--item">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+								<a href="" class="header-social_grid--item">
+									<i class="fab fa-instagram"></i>
+								</a>
+								<a href="" class="header-social_grid--item">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-main">
+		<div class="container">
+			<div class="header-main_inner d-flex align-items-center">
+				<div class="header-logo">
+					<a href="" class="d-inline-flex align-middle">
+						<img style="height: 40px" src="/assets/images/logo.png">
+					</a>
+				</div>
+				<div class="header-navigation ms-lg-auto">
+					<ul class="list-unstyled mb-0">
+						<li>
+							<a href="">Đổi Thẻ Cào</a>
+						</li>
+						<li>
+							<a href="">Đổi Tiền Sim</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Nạp Tiền <i class="far fa-angle-down"></i></a>
+							<ul class="list-unstyled mb-0 theme-gradient_before">
+								<li>
+									<a href="">Nạp Từ Ngân Hàng</a>
+								</li>
+								<li>
+									<a href="">Nạp Từ Thẻ Cào</a>
+								</li>
+								<li>
+									<a href="">Nạp Từ Sims</a>
+								</li>
+							</ul>
+						<li>
+							<a href="">Chuyển Tiền</a>
+						</li>
+						<li>
+							<a href="">Rút Tiền (Tự Động)</a>
+						</li>
+						<li>
+							<a href="">Rút Momo (Tự Động)</a>
+						</li>
+						<li>
+							<a href="">Tích Hợp API</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Tin Tức <i class="far fa-angle-down"></i></a>
+							<ul class="list-unstyled mb-0 theme-gradient_before">
+								<li>
+									<a href="">Hướng dẫn</a>
+								</li>
+								<li>
+									<a href="">Khuyến Mãi</a>
+								</li>
+								<li>
+									<a href="">Thông Báo</a>
+								</li>
+								<li>
+									<a href="">Tin tức</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="header-overlay" class="header-overlay"></div>
 </div>
 <div id="main" class="main">
-
+	<div class="section-banner">
+		<div class="swiper" id="slideBanner">
+			<div class="swiper-wrapper h-auto">
+				<div class="swiper-slide">
+					<div class="banner-image background-cover"
+						 style="background-image: url('./assets/images/banner/1.png')"></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="banner-image background-cover"
+						 style="background-image: url('./assets/images/banner/1.png')"></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="banner-image background-cover"
+						 style="background-image: url('./assets/images/banner/1.png')"></div>
+				</div>
+			</div>
+			<div class="slide-button-prev"><i class="fal fa-angle-left"></i></div>
+			<div class="slide-button-next"><i class="fal fa-angle-right"></i></div>
+		</div>
+	</div>
+	<div class="section-tables">
+		<div class="container">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped table-theme">
+					<thead class="theme-gradient text-white">
+					<tr class="table-theme_head">
+						<td colspan="7">
+							Bảng phí đổi thẻ
+						</td>
+					</tr>
+					</thead>
+					<tbody class="text-center">
+					<tr>
+						<th>Loại thẻ</th>
+						<td>Viettel</td>
+						<td>Vinaphone</td>
+						<td>Mobifone</td>
+						<td>Vietnamobile</td>
+						<td>Zing</td>
+						<td>Gate</td>
+					</tr>
+					<tr>
+						<th>Phí</th>
+						<td>23%</td>
+						<td>26%</td>
+						<td>25%</td>
+						<td>20%</td>
+						<td>20%</td>
+						<td>30%</td>
+					</tr>
+					<tr>
+						<th>Phí API</th>
+						<td>23%</td>
+						<td>24%</td>
+						<td>23%</td>
+						<td>18%</td>
+						<td>19%</td>
+						<td>27%</td>
+					</tr>
+					<tr>
+						<th>Trạng thái</th>
+						<td><span class="badge bg-success">Đang hoạt động</span></td>
+						<td><span class="badge bg-success">Đang hoạt động</span></td>
+						<td><span class="badge bg-success">Đang hoạt động</span></td>
+						<td><span class="badge bg-success">Đang hoạt động</span></td>
+						<td><span class="badge bg-success">Đang hoạt động</span></td>
+						<td><span class="badge bg-success">Đang hoạt động</span></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="container">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped table-theme">
+					<thead class="theme-gradient text-white">
+					<tr class="table-theme_head">
+						<td colspan="8">
+							Bảng phí nạp tiền Momo & Bank
+						</td>
+					</tr>
+					</thead>
+					<tbody class="text-center">
+					<tr>
+						<th>Kênh nạp</th>
+						<td>Momo</td>
+						<td>Vietcombank</td>
+						<td>Vietinbank</td>
+						<td>Mbbank</td>
+						<td>Techcombank</td>
+						<td>Sacombank</td>
+						<td>BIDV</td>
+					</tr>
+					<tr>
+						<th>Phí</th>
+						<td>1%</td>
+						<td>Miễn phí</td>
+						<td>Miễn phí</td>
+						<td>Miễn phí</td>
+						<td>Miễn phí</td>
+						<td>Miễn phí</td>
+						<td>Miễn phí</td>
+					</tr>
+					<tr>
+						<th>Phí API</th>
+						<td>2%</td>
+						<td>3%</td>
+						<td>3%</td>
+						<td>3%</td>
+						<td>3%</td>
+						<td>3%</td>
+						<td>3%</td>
+					</tr>
+					<tr>
+						<th>Trạng thái</th>
+						<td><span class="badge bg-success">Đang hoạt động</span></td>
+						<td><span class="badge bg-success">Đang hoạt động</span></td>
+						<td><span class="badge bg-success">Đang hoạt động</span></td>
+						<td><span class="badge bg-success">Đang hoạt động</span></td>
+						<td><span class="badge bg-success">Đang hoạt động</span></td>
+						<td><span class="badge bg-success">Đang hoạt động</span></td>
+						<td><span class="badge bg-success">Đang hoạt động</span></td>
+					</tr>
+					<tr>
+						<th colspan="8">Quý khách cần kết nối API vui lòng liên hệ để được hỗ trợ</th>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="container">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped table-theme">
+					<thead class="theme-gradient text-white">
+					<tr class="table-theme_head">
+						<td colspan="4">
+							Bảng phí nạp tiền bằng sms
+						</td>
+					</tr>
+					</thead>
+					<tbody class="text-center">
+					<tr>
+						<th>Nhà mạng</th>
+						<td>Viettel</td>
+						<td>Vinaphone</td>
+						<td>Mobifone</td>
+					</tr>
+					<tr>
+						<th>Phí</th>
+						<td>50%</td>
+						<td>50%</td>
+						<td>60%</td>
+					</tr>
+					<tr>
+						<th>Trạng thái</th>
+						<td><span class="badge bg-success">Đang hoạt động</span></td>
+						<td><span class="badge bg-success">Đang hoạt động</span></td>
+						<td><span class="badge bg-success">Đang hoạt động</span></td>
+					</tr>
+					<tr>
+						<th colspan="4">Quý khách cần kết nối API vui lòng liên hệ để được hỗ trợ</th>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="section-feature">
+		<div class="container">
+			<div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-3 justify-content-center">
+				<div class="col">
+					<div class="feature-card card border-0 rounded-0 bg-white">
+						<div class="card-header p-0 rounded-0 border-0 bg-white">
+							<div class="card-icon theme-gradient">
+								<i class="fal fa-desktop-alt"></i>
+							</div>
+							<div class="card-title">
+								Tích hợp API tự động
+							</div>
+						</div>
+						<div class="card-body p-0">
+							<div class="card-text">
+								Hỗ trợ tích hợp API miễn phí cho shop game. Tốc độ xử lý thẻ cực nhanh, chiết khấu hấp
+								dẫn.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="feature-card card border-0 rounded-0 bg-white">
+						<div class="card-header p-0 rounded-0 border-0 bg-white">
+							<div class="card-icon theme-gradient">
+								<i class="fal fa-wallet"></i>
+							</div>
+							<div class="card-title">
+								Giao dịch an toàn
+							</div>
+						</div>
+						<div class="card-body p-0">
+							<div class="card-text">
+								Đội ngũ CSKH hỗ trợ 24/7. Không giới hạn số lần rút tiền, số tiền cần rút và nhận tiền
+								ngay sau đặt lệnh.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="feature-card card border-0 rounded-0 bg-white">
+						<div class="card-header p-0 rounded-0 border-0 bg-white">
+							<div class="card-icon theme-gradient">
+								<i class="fal fa-credit-card-front"></i>
+							</div>
+							<div class="card-title">
+								Đối tác kết nối
+							</div>
+						</div>
+						<div class="card-body p-0">
+							<div class="card-text">
+								Nhiều đối tác tích hợp API, hỗ trợ nhiều chủng loại thẻ, nhiều ngân hàng/ví khác nhau.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <footer id="footer" class="footer">
@@ -50,7 +392,7 @@
 
 <script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
 <script type="text/javascript"
-        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+		src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/fancyBox/jquery.fancybox.js"></script>
 <script type="text/javascript" src="./assets/js/app.js"></script>
