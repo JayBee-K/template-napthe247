@@ -164,7 +164,8 @@
         <div class="position-relative z-index-2">
             <div class="container">
                 <h1 class="mb-0 breadcrumb-image_title">
-                    Đổi mật khẩu cấp 2
+                    Nạp tiền vào tài khoản
+
                 </h1>
             </div>
         </div>
@@ -175,34 +176,86 @@
                 <div class="col-lg-6">
                     <div class="section-heading_decor">
                         <div class="title">
-                            Đổi&nbsp;<span>mật khẩu</span> cấp 2
+                            Nạp tiền vào&nbsp;<span>tài khoản</span>
                         </div>
                     </div>
                     <form action="">
-                        <div class="alert alert-warning alert-dismissible fade show">
-                            Mật khẩu cấp 2 bắt buộc phải từ 8 ký tự trở lên. Bao gồm chữ và số
-                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                        </div>
                         <div class="form-theme">
                             <div class="form-theme_item">
                                 <div class="form-theme_item--label">
-                                    Mật khẩu cấp 2 mới: <span class="text-danger">(*)</span>
+                                    Ngân hàng <span class="text-danger">(*)</span>
                                 </div>
                                 <div class="form-theme_item--input">
-                                    <input type="text" placeholder="Mật khẩu cấp 2 mới">
+                                    <select name="" id="">
+                                        <option value="">VCB - Ngân hàng TMCP Ngoại Thương Việt Nam</option>
+                                        <option value="">VCB - Ngân hàng TMCP Ngoại Thương Việt Nam</option>
+                                        <option value="">VCB - Ngân hàng TMCP Ngoại Thương Việt Nam</option>
+                                        <option value="">VCB - Ngân hàng TMCP Ngoại Thương Việt Nam</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="form-theme_item">
-                                <div class="form-theme_item--label">
-                                    Nhập lại mật khẩu cấp 2 mới: <span class="text-danger">(*)</span>
-                                </div>
-                                <div class="form-theme_item--input">
-                                    <input type="text" placeholder="Nhập lại mật khẩu cấp 2 mới">
-                                </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-theme">
+                                    <tbody>
+                                    <tr>
+                                        <th>Ngân hàng</th>
+                                        <td>
+                                            <strong>
+                                                Vietcombank
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Chủ tài khoản</th>
+                                        <td>
+                                            <strong>
+                                                TRIEU TRUNG VAN
+                                                <button type="button" data-value="TRIEU TRUNG VAN"
+                                                        class="copy-value ms-1 button-theme button-theme_xs theme-gradient theme-gradient_hover">
+                                                    Sao chép
+                                                </button>
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Số tài khoản:</th>
+                                        <td>
+                                            <strong>
+                                                0731000673710
+                                                <button type="button" data-value="0731000673710"
+                                                        class="copy-value ms-1 button-theme button-theme_xs theme-gradient theme-gradient_hover">
+                                                    Sao chép
+                                                </button>
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Nội dung:</th>
+                                        <td>
+                                            <strong>
+                                                NAPTHE247 ABCTHERD
+                                                <button type="button" data-value="NAPTHE247 ABCTHERD"
+                                                        class="copy-value ms-1 button-theme button-theme_xs theme-gradient theme-gradient_hover">
+                                                    Sao chép
+                                                </button>
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Kết nối API nạp tiền: :</th>
+                                        <td>
+                                            <a class="primary-text" href="#">
+                                                Tạo từ khóa nạp cho website/game của bạn
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <div class="form-theme_item">
-                                <button class="button-theme theme-gradient theme-gradient_hover w-100">Thực hiện
-                                </button>
+                            <div class="text-muted fst-italic">
+                                Hệ thống sẽ tự động cộng tiền trong 5 giây. Vui lòng ghi đúng Số tài khoản và nội
+                                dung. Nếu quá 5 phút không nhận được tiền vui lòng liên hệ bộ phận CSKH để được hỗ
+                                trợ.
                             </div>
                         </div>
                     </form>
@@ -210,31 +263,107 @@
                 <div class="col-lg-6">
                     <div class="section-heading_decor">
                         <div class="title">
-                            Trạng thái
-                            &nbsp;<span>bảo mật</span>:&nbsp;MK
+                            Bảng phí&nbsp;<span>nạp tiền</span>
                         </div>
                     </div>
-                    <div class="row g-3">
-                        <div class="col-12">
-                            <a href="" class="button-theme theme-gradient theme-gradient_hover w-100">
-                                Cài đặt bảo mật
-                            </a>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-theme">
+                            <thead class="theme-gradient text-white">
+                            <tr>
+                                <th class="text-center">
+                                    Kênh nạp
+                                </th>
+                                <th class="text-center">
+                                    Phí
+                                </th>
+                                <th class="text-center">
+                                    Phí API
+                                </th>
+                                <th class="text-center">
+                                    Shop Game
+                                </th>
+                                <th class="text-center">
+                                    Nhận ngay
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody class="text-center">
+                            <tr>
+                                <td>Ngân hàng</td>
+                                <td>Miễn phí</td>
+                                <td>3%</td>
+                                <td>2%</td>
+                                <td>
+                                    <div class="badge bg-success">5 giây</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Momo</td>
+                                <td>1%</td>
+                                <td>2%</td>
+                                <td>1.5%</td>
+                                <td>
+                                    <div class="badge bg-success">5 giây</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="8">Quý khách cần kết nối API vui lòng liên hệ để được hỗ trợ</th>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="section-heading_decor">
+                        <div class="title">
+                            Nạp tiền&nbsp;<span>gần đây</span>
                         </div>
-                        <div class="col-12">
-                            <a href="" class="button-theme theme-gradient theme-gradient_hover w-100">
-                                Thiết lập 2FA
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a href="" class="button-theme theme-gradient theme-gradient_hover w-100">
-                                Đổi mật khẩu
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a href="" class="button-theme theme-gradient theme-gradient_hover w-100">
-                                Đổi mật khẩu 2
-                            </a>
-                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-theme">
+                            <thead class="theme-gradient text-white">
+                            <tr>
+                                <th>
+                                    Thời gian
+                                </th>
+                                <th>
+                                    Tài khoản nạp
+                                </th>
+                                <th>
+                                    Số tiền
+                                </th>
+                                <th class="text-center">
+                                    Trạng thái
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>20:40 18/10/2022</th>
+                                <td>Tên tài khoản nạp</td>
+                                <td>100,000 đồng</td>
+                                <td class="text-center">
+                                    <div class="badge bg-success">Thành công</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>20:40 18/10/2022</th>
+                                <td>Tên tài khoản nạp</td>
+                                <td>100,000 đồng</td>
+                                <td class="text-center">
+                                    <div class="badge bg-warning">Đang xử lý</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>20:40 18/10/2022</th>
+                                <td>Tên tài khoản nạp</td>
+                                <td>100,000 đồng</td>
+                                <td class="text-center">
+                                    <div class="badge bg-danger">Bị huỷ</div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

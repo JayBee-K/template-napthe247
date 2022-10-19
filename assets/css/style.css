@@ -43,7 +43,6 @@
 .button-theme {
     letter-spacing: .5px;
     position: relative;
-    overflow: hidden;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -64,9 +63,18 @@
     overflow: hidden;
 }
 
+.button-theme > i {
+    margin-right: 5px;
+}
+
 .button-theme.button-theme_sm {
     font-size: .95em;
     padding: 8px 10px;
+}
+
+.button-theme.button-theme_xs {
+    font-size: .85em;
+    padding: 5px 8px 4px;
 }
 
 .button-theme:hover {
@@ -443,6 +451,39 @@
 .table-theme .badge {
     line-height: 1.4;
     font-size: .85em;
+}
+
+.table-theme .table-button_sort {
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    box-shadow: none;
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    color: var(--bs-white);
+    position: relative;
+    font-weight: 500;
+}
+
+.table-theme .table-button_sort > [class*=sort] {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: none;
+}
+
+.table-theme .table-button_sort.table-button_sort--up .sort-up {
+    display: block;
+}
+
+.table-theme .table-button_sort.table-button_sort--down .sort-down {
+    display: block;
 }
 
 .feature-card {
@@ -953,7 +994,7 @@
 .form-theme {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 }
 
 .form-theme .form-theme_item .form-theme_item--label {
@@ -986,9 +1027,84 @@
     border-color: var(--primary-color) !important;
 }
 
+.form-theme .form-theme_item .form-theme_item--input > input:disabled {
+    background: var(--bs-gray-200);
+    opacity: .8;
+    cursor: not-allowed;
+}
+
+.form-theme .form-theme_item .form-theme_item--group {
+    display: flex;
+}
+
+.form-theme .form-theme_item .form-theme_item--group > :first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+}
+
+.form-theme .form-theme_item .form-theme_item--group > :last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
 .form-theme .form-theme_item .form-theme_item--desc {
     margin-top: 5px;
     color: var(--bs-gray-700);
     font-weight: 500;
     font-size: .9em;
+}
+
+.theme-tab {
+    margin-bottom: 20px;
+}
+
+.theme-tab > ul {
+    gap: 15px;
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.theme-tab > ul > li {
+    flex: 1 1 100%;
+}
+
+.theme-tab > ul > li > .nav-link {
+    margin-bottom: 0;
+    width: 100%;
+    border-radius: 20px;
+    background: var(--bs-gray-200);
+    letter-spacing: .5px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    font-weight: 500;
+    color: var(--primary-color);
+    white-space: nowrap;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border: 0;
+    outline: none;
+    font-size: 1em;
+    padding: 10px 15px;
+    overflow: hidden;
+}
+
+.theme-tab > ul > li > .nav-link.active {
+    background: -moz-linear-gradient(150deg, var(--primary-hover) 0%, var(--primary-color) 50%, var(--primary-hover) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, var(--primary-hover)), color-stop(50%, var(--primary-color)), color-stop(100%, var(--primary-hover)));
+    background: -webkit-linear-gradient(150deg, var(--primary-hover) 0%, var(--primary-color) 50%, var(--primary-hover) 100%);
+    background: -o-linear-gradient(150deg, var(--primary-hover) 0%, var(--primary-color) 50%, var(--primary-hover) 100%);
+    background: -ms-linear-gradient(150deg, var(--primary-hover) 0%, var(--primary-color) 50%, var(--primary-hover) 100%);
+    background: linear-gradient(150deg, var(--primary-hover) 0%, var(--primary-color) 50%, var(--primary-hover) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-one', endColorstr='$color-two', GradientType=1);
+    background-size: 260% 100%;
+    background-position: right bottom;
+    color: var(--bs-white);
 }

@@ -164,77 +164,231 @@
         <div class="position-relative z-index-2">
             <div class="container">
                 <h1 class="mb-0 breadcrumb-image_title">
-                    Đổi mật khẩu cấp 2
+                    Rút tiền về ngân hàng
                 </h1>
             </div>
         </div>
     </div>
     <div class="section-gap">
         <div class="container">
+            <div class="alert alert-warning">
+                Để bảo mật tài khoản, hình thức bảo mật thanh toán phải từ mật khẩu cấp 2 trở lên
+                <a href="" class="primary-text">Cài đặt bảo mật</a>
+            </div>
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="section-heading_decor">
                         <div class="title">
-                            Đổi&nbsp;<span>mật khẩu</span> cấp 2
+                            Rút tiền về&nbsp;<span>ngân hàng</span>
                         </div>
                     </div>
-                    <form action="">
-                        <div class="alert alert-warning alert-dismissible fade show">
-                            Mật khẩu cấp 2 bắt buộc phải từ 8 ký tự trở lên. Bao gồm chữ và số
-                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    <div class="form-theme">
+                        <div class="form-theme_item">
+                            <div class="form-theme_item--label">
+                                Ngân hàng <span class="text-danger">(*)</span>
+                            </div>
+                            <div class="form-theme_item--input">
+                                <select name="" id="">
+                                    <option value="">VTB - Vietinbank - Ngân hàng TMCP Công Thương Việt Nam</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="form-theme">
-                            <div class="form-theme_item">
-                                <div class="form-theme_item--label">
-                                    Mật khẩu cấp 2 mới: <span class="text-danger">(*)</span>
-                                </div>
-                                <div class="form-theme_item--input">
-                                    <input type="text" placeholder="Mật khẩu cấp 2 mới">
-                                </div>
+                        <div class="form-theme_item">
+                            <div class="form-theme_item--label">
+                                Số tài khoản: <span class="text-danger">(*)</span>
                             </div>
-                            <div class="form-theme_item">
-                                <div class="form-theme_item--label">
-                                    Nhập lại mật khẩu cấp 2 mới: <span class="text-danger">(*)</span>
-                                </div>
-                                <div class="form-theme_item--input">
-                                    <input type="text" placeholder="Nhập lại mật khẩu cấp 2 mới">
-                                </div>
-                            </div>
-                            <div class="form-theme_item">
-                                <button class="button-theme theme-gradient theme-gradient_hover w-100">Thực hiện
+                            <div class="form-theme_item--input form-theme_item--group">
+                                <input type="text" placeholder="Số tài khoản">
+                                <button type="button"
+                                        class="button-theme theme-gradient_hover theme-gradient">
+                                    Kiểm tra
                                 </button>
                             </div>
+                            <div class="form-theme_item--desc text-danger">
+                                Tài khoản không tồn tại trong ngân hàng Vietinbank
+                            </div>
                         </div>
-                    </form>
+                        <div class="form-theme_item">
+                            <div class="form-theme_item--label">
+                                Chủ tài khoản: <span class="text-danger">(*)</span>
+                            </div>
+                            <div class="form-theme_item--input">
+                                <input type="text" placeholder="Chủ tài khoản" disabled>
+                            </div>
+                        </div>
+                        <div class="form-theme_item">
+                            <div class="form-theme_item--label">
+                                Số tiền rút:
+                                <span class="text-danger">(*)</span>(Tối đa 0 VNĐ)
+                            </div>
+                            <div class="form-theme_item--input form-theme_item--group">
+                                <input type="text" placeholder="Số tiền thực nhận (tối thiểu: 50,000đ)">
+                                <button type="button"
+                                        class="button-theme theme-gradient_hover theme-gradient">
+                                    Max
+                                </button>
+                            </div>
+                            <div class="form-theme_item--desc">
+                                Số tiền rút: 0 VNĐ
+                                <br> Phí rút: <b class="text-dark">Miễn phí</b> - Tổng cộng: <b
+                                    class="text-danger">0</b> VNĐ
+                                <br> Số tiền rút tối
+                                thiểu/lần 10,000đ và tối đa 300,000,000đ
+                            </div>
+                        </div>
+                        <div class="form-theme_item">
+                            <div class="form-theme_item--label">
+                                Nội dung: <span class="text-danger">(*) <span class="fst-italic">Vui lòng không nhập dấu hoặc ký tự đặc biệt</span></span>
+                            </div>
+                            <div class="form-theme_item--input">
+                                <input type="text" placeholder="Nội dung (NAPTHE247.VN)">
+                            </div>
+                        </div>
+                        <div class="form-theme_item">
+                            <div class="form-theme_item--label">
+                                Mật khẩu đăng nhập: <span class="text-danger">(*)</span>
+                            </div>
+                            <div class="form-theme_item--input">
+                                <input type="text" placeholder="Mật khẩu đăng nhập">
+                            </div>
+                        </div>
+                        <div class="form-theme_item">
+                            <div class="form-theme_item--label">
+                                Lưu thông tin tài khoản: (Không bắt buộc)
+                            </div>
+                            <div class="form-theme_item--input">
+                                <input type="text" placeholder="Tên gợi nhớ">
+                            </div>
+                        </div>
+                        <div class="form-theme_item">
+                            <button class="button-theme theme-gradient theme-gradient_hover w-100">Thực hiện
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="section-heading_decor">
                         <div class="title">
-                            Trạng thái
-                            &nbsp;<span>bảo mật</span>:&nbsp;MK
+                            Tài khoản&nbsp;<span>đã lưu</span>
                         </div>
                     </div>
-                    <div class="row g-3">
-                        <div class="col-12">
-                            <a href="" class="button-theme theme-gradient theme-gradient_hover w-100">
-                                Cài đặt bảo mật
-                            </a>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-theme">
+                            <thead class="theme-gradient text-white">
+                            <tr>
+                                <th>
+                                    Tên ghi chú
+                                </th>
+                                <th>
+                                    Ngân hàng
+                                </th>
+                                <th>
+                                    Số tài khoản
+                                </th>
+                                <th>
+                                    Chủ tài khoản
+                                </th>
+                                <th class="text-center">
+                                    Thao tác
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>Nguyễn Văn A</th>
+                                <td>Vietcombank</td>
+                                <td>090909090909</td>
+                                <td>Nguyễn Văn A</td>
+                                <td class="text-center">
+                                    <a href="" class="btn btn-primary btn-sm">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a href="" class="btn btn-danger btn-sm">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Nguyễn Văn A</th>
+                                <td>Vietcombank</td>
+                                <td>090909090909</td>
+                                <td>Nguyễn Văn A</td>
+                                <td class="text-center">
+                                    <a href="" class="btn btn-primary btn-sm">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a href="" class="btn btn-danger btn-sm">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="section-heading_decor">
+                        <div class="title">
+                            Rút tiền&nbsp;<span>gần đây</span>
                         </div>
-                        <div class="col-12">
-                            <a href="" class="button-theme theme-gradient theme-gradient_hover w-100">
-                                Thiết lập 2FA
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a href="" class="button-theme theme-gradient theme-gradient_hover w-100">
-                                Đổi mật khẩu
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <a href="" class="button-theme theme-gradient theme-gradient_hover w-100">
-                                Đổi mật khẩu 2
-                            </a>
-                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-theme">
+                            <thead class="theme-gradient text-white">
+                            <tr>
+                                <th>
+                                    Thời gian
+                                </th>
+                                <th>
+                                    Ví
+                                </th>
+                                <th>
+                                    Số tài khoản
+                                </th>
+                                <th>
+                                    Chủ tài khoản
+                                </th>
+                                <th>
+                                    Số tiền
+                                </th>
+                                <th class="text-center">
+                                    Trạng thái
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>20:40 18/10/2022</th>
+                                <td>Momo</td>
+                                <td>090909090909</td>
+                                <td>Nguyễn Văn A</td>
+                                <td>100,000 đồng</td>
+                                <td class="text-center">
+                                    <div class="badge bg-success">Thành công</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>20:40 18/10/2022</th>
+                                <td>Momo</td>
+                                <td>090909090909</td>
+                                <td>Nguyễn Văn A</td>
+                                <td>100,000 đồng</td>
+                                <td class="text-center">
+                                    <div class="badge bg-warning">Đang xử lý</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>20:40 18/10/2022</th>
+                                <td>Momo</td>
+                                <td>090909090909</td>
+                                <td>Nguyễn Văn A</td>
+                                <td>100,000 đồng</td>
+                                <td class="text-center">
+                                    <div class="badge bg-danger">Bị huỷ</div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
