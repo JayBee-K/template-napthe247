@@ -179,150 +179,624 @@
 			<div class="slide-button-next"><i class="fal fa-angle-right"></i></div>
 		</div>
 	</div>
+	<div class="section-gap">
+		<div class="container">
+			<div class="section-heading">
+				<div class="text-center title">
+					Đổi thẻ cào
+				</div>
+				<p>- Không nhận API game bài, cổng game bài cố tình đấu api sẽ bị khóa</p>
+				<p>- Thẻ Viettel, Zing cần điền đúng seri. Sản lượng trên 2tr/ngày ib
+					<a href="">tại đây</a>
+					để được
+					điều chỉnh giá tốt
+				</p>
+				<p>- Sai mệnh giá -50%. Hướng dẫn tích hợp API gạch thẻ tự động cho Shop:
+					<a href="">tại đây</a>
+				</p>
+				<a href=""><strong>Lịch sử nạp thẻ tại đây</strong></a>
+				. Thông kê
+				<a href="">tại đây</a>
+			</div>
+			<div class="form-theme">
+				<form action="">
+					<div id="createRow">
+						<div class="row-item row g-4">
+							<div class="col-lg-3 col-sm-12 col-12" id="theCao">
+								<div class="form-theme_item">
+									<div class="form-theme_item--input">
+										<select name="" id="">
+											<option data-index="0" selected value="">Viettel(85,88)</option>
+											<option data-index="1" value="">Vina(88,91)</option>
+											<option data-index="2" value="">Mobifone(77,80)</option>
+											<option data-index="3" value="">Vietnammobi(85,88)</option>
+											<option data-index="4" value="">Zing</option>
+											<option data-index="5" value="">GATE</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-6 col-12">
+								<div class="form-theme_item">
+									<div class="form-theme_item--input form-theme_item--group">
+										<input type="text" placeholder="Mã thẻ">
+										<button type="button"
+												class="copy-value button-theme button-theme_icon theme-gradient theme-gradient_hover">
+											<i class="far fa-paste"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-6 col-12">
+								<div class="form-theme_item">
+									<div class="form-theme_item--input form-theme_item--group">
+										<input type="text" placeholder="Mã seri">
+										<button type="button"
+												class="copy-value button-theme button-theme_icon theme-gradient theme-gradient_hover">
+											<i class="fas fa-paste"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-sm-10 col-9" id="menhGia">
+								<div class="form-theme_item">
+									<div class="form-theme_item--input">
+										<select name="" id="">
+											<option data-index="0" selected value="">-- Mệnh giá --</option>
+											<option data-index="1" value="">10,000 đ</option>
+											<option data-index="2" value="">20,000 đ</option>
+											<option data-index="3" value="">30,000 đ</option>
+											<option data-index="4" value="">50,000 đ</option>
+											<option data-index="5" value="">100,000 đ</option>
+											<option data-index="6" value="">200,000 đ</option>
+											<option data-index="7" value="">300,000 đ</option>
+											<option data-index="8" value="">500,000 đ</option>
+											<option data-index="9" value="">1,000,000 đ</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-1 col-sm-2 col-3 text-right">
+								<button type="button" class="button-theme theme-gradient theme-gradient_hover w-100 addRow">
+									<i class="fas fa-plus-circle"></i>
+									Thêm
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="form-theme_item text-center">
+					<button class="button-theme button-theme_lg theme-gradient theme-gradient_hover">
+						<i class="fas fa-upload"></i> Gửi thẻ cào
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="section-tables section-gap">
 		<div class="container">
-			<div class="table-responsive">
-				<table class="table table-bordered table-striped table-theme">
-					<thead class="theme-gradient text-white">
-					<tr class="table-theme_head">
-						<td colspan="7">
-							Bảng phí đổi thẻ
-						</td>
-					</tr>
-					</thead>
-					<tbody class="text-center">
-					<tr>
-						<th>Loại thẻ</th>
-						<td>Viettel</td>
-						<td>Vinaphone</td>
-						<td>Mobifone</td>
-						<td>Vietnamobile</td>
-						<td>Zing</td>
-						<td>Gate</td>
-					</tr>
-					<tr>
-						<th>Phí</th>
-						<td>23%</td>
-						<td>26%</td>
-						<td>25%</td>
-						<td>20%</td>
-						<td>20%</td>
-						<td>30%</td>
-					</tr>
-					<tr>
-						<th>Phí API</th>
-						<td>23%</td>
-						<td>24%</td>
-						<td>23%</td>
-						<td>18%</td>
-						<td>19%</td>
-						<td>27%</td>
-					</tr>
-					<tr>
-						<th>Trạng thái</th>
-						<td><span class="badge bg-success">Đang hoạt động</span></td>
-						<td><span class="badge bg-success">Đang hoạt động</span></td>
-						<td><span class="badge bg-success">Đang hoạt động</span></td>
-						<td><span class="badge bg-success">Đang hoạt động</span></td>
-						<td><span class="badge bg-success">Đang hoạt động</span></td>
-						<td><span class="badge bg-success">Đang hoạt động</span></td>
-					</tr>
-					</tbody>
-				</table>
+			<div class="section-heading text-center">
+				<div class="desc">
+					Bảng phí đổi thẻ cào
+				</div>
 			</div>
-		</div>
-		<div class="container">
-			<div class="table-responsive">
-				<table class="table table-bordered table-striped table-theme">
-					<thead class="theme-gradient text-white">
-					<tr class="table-theme_head">
-						<td colspan="8">
-							Bảng phí nạp tiền Momo & Bank
-						</td>
-					</tr>
-					</thead>
-					<tbody class="text-center">
-					<tr>
-						<th>Kênh nạp</th>
-						<td>Momo</td>
-						<td>Vietcombank</td>
-						<td>Vietinbank</td>
-						<td>Mbbank</td>
-						<td>Techcombank</td>
-						<td>Sacombank</td>
-						<td>BIDV</td>
-					</tr>
-					<tr>
-						<th>Phí</th>
-						<td>1%</td>
-						<td>Miễn phí</td>
-						<td>Miễn phí</td>
-						<td>Miễn phí</td>
-						<td>Miễn phí</td>
-						<td>Miễn phí</td>
-						<td>Miễn phí</td>
-					</tr>
-					<tr>
-						<th>Phí API</th>
-						<td>2%</td>
-						<td>3%</td>
-						<td>3%</td>
-						<td>3%</td>
-						<td>3%</td>
-						<td>3%</td>
-						<td>3%</td>
-					</tr>
-					<tr>
-						<th>Trạng thái</th>
-						<td><span class="badge bg-success">Đang hoạt động</span></td>
-						<td><span class="badge bg-success">Đang hoạt động</span></td>
-						<td><span class="badge bg-success">Đang hoạt động</span></td>
-						<td><span class="badge bg-success">Đang hoạt động</span></td>
-						<td><span class="badge bg-success">Đang hoạt động</span></td>
-						<td><span class="badge bg-success">Đang hoạt động</span></td>
-						<td><span class="badge bg-success">Đang hoạt động</span></td>
-					</tr>
-					<tr>
-						<th colspan="8">Quý khách cần kết nối API vui lòng liên hệ để được hỗ trợ</th>
-					</tr>
-					</tbody>
-				</table>
+			<div class="theme-tab">
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-viettel"
+								type="button" aria-selected="true" role="tab">
+							Viettel (89)
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-vinaphone"
+								type="button" aria-selected="false" tabindex="-1" role="tab">
+							Vinaphone (91)
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-mobifone"
+								type="button" aria-selected="false" tabindex="-1" role="tab">
+							Mobifone (86)
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-vietnammobile"
+								type="button" aria-selected="false" tabindex="-1" role="tab">
+							Vietnammobile (86)
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-zing"
+								type="button" aria-selected="false" tabindex="-1" role="tab">
+							Zing (86)
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-garena"
+								type="button" aria-selected="false" tabindex="-1" role="tab">
+							Garena (86)
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-gate"
+								type="button" aria-selected="false" tabindex="-1" role="tab">
+							Gate (86)
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-vcoin"
+								type="button" aria-selected="false" tabindex="-1" role="tab">
+							Vcoin (86)
+						</button>
+					</li>
+				</ul>
 			</div>
-		</div>
-		<div class="container">
-			<div class="table-responsive">
-				<table class="table table-bordered table-striped table-theme">
-					<thead class="theme-gradient text-white">
-					<tr class="table-theme_head">
-						<td colspan="4">
-							Bảng phí nạp tiền bằng sms
-						</td>
-					</tr>
-					</thead>
-					<tbody class="text-center">
-					<tr>
-						<th>Nhà mạng</th>
-						<td>Viettel</td>
-						<td>Vinaphone</td>
-						<td>Mobifone</td>
-					</tr>
-					<tr>
-						<th>Phí</th>
-						<td>50%</td>
-						<td>50%</td>
-						<td>60%</td>
-					</tr>
-					<tr>
-						<th>Trạng thái</th>
-						<td><span class="badge bg-success">Đang hoạt động</span></td>
-						<td><span class="badge bg-success">Đang hoạt động</span></td>
-						<td><span class="badge bg-success">Đang hoạt động</span></td>
-					</tr>
-					<tr>
-						<th colspan="4">Quý khách cần kết nối API vui lòng liên hệ để được hỗ trợ</th>
-					</tr>
-					</tbody>
-				</table>
+			<div class="tab-content">
+				<div class="tab-pane fade active show" id="tab-viettel">
+					<div class="table-responsive">
+						<table class="table table-bordered table-striped table-theme">
+							<thead class="theme-gradient text-white">
+							<tr class="table-theme_head">
+								<th class="text-center">Nhóm</th>
+								<th class="text-center">10,000đ</th>
+								<th class="text-center">20,000đ</th>
+								<th class="text-center">30,000đ</th>
+								<th class="text-center">50,000đ</th>
+								<th class="text-center">100,000đ</th>
+								<th class="text-center">200,000đ</th>
+								<th class="text-center">300,000đ</th>
+								<th class="text-center">500,000đ</th>
+								<th class="text-center">1,000,000đ</th>
+							</tr>
+							</thead>
+							<tbody class="text-center">
+							<tr>
+								<td class="text-xs-nowrap"><b>Tổng đại lý</b></td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>12%</td>
+								<td>12%</td>
+								<td>13%</td>
+								<td>13%</td>
+								<td>15%</td>
+								<td>15%</td>
+							</tr>
+							<tr>
+								<td class="text-xs-nowrap"><b>Đại lý</b></td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>13%</td>
+								<td>13%</td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>16%</td>
+								<td>16%</td>
+							</tr>
+							<tr>
+								<td class="text-xs-nowrap"><b>Thành viên</b></td>
+								<td>17%</td>
+								<td>17%</td>
+								<td>17%</td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>16%</td>
+								<td>16%</td>
+								<td>18%</td>
+								<td>18%</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="tab-vinaphone">
+					<div class="table-responsive">
+						<table class="table table-bordered table-striped table-theme">
+							<thead class="theme-gradient text-white">
+							<tr class="table-theme_head">
+								<th class="text-center">Nhóm</th>
+								<th class="text-center">10,000đ</th>
+								<th class="text-center">20,000đ</th>
+								<th class="text-center">30,000đ</th>
+								<th class="text-center">50,000đ</th>
+								<th class="text-center">100,000đ</th>
+								<th class="text-center">200,000đ</th>
+								<th class="text-center">300,000đ</th>
+								<th class="text-center">500,000đ</th>
+								<th class="text-center">1,000,000đ</th>
+							</tr>
+							</thead>
+							<tbody class="text-center">
+							<tr>
+								<td class="text-xs-nowrap"><b>Tổng đại lý</b></td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>12%</td>
+								<td>12%</td>
+								<td>13%</td>
+								<td>13%</td>
+								<td>15%</td>
+								<td>15%</td>
+							</tr>
+							<tr>
+								<td class="text-xs-nowrap"><b>Đại lý</b></td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>13%</td>
+								<td>13%</td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>16%</td>
+								<td>16%</td>
+							</tr>
+							<tr>
+								<td class="text-xs-nowrap"><b>Thành viên</b></td>
+								<td>17%</td>
+								<td>17%</td>
+								<td>17%</td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>16%</td>
+								<td>16%</td>
+								<td>18%</td>
+								<td>18%</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="tab-mobifone">
+					<div class="table-responsive">
+						<table class="table table-bordered table-striped table-theme">
+							<thead class="theme-gradient text-white">
+							<tr class="table-theme_head">
+								<th class="text-center">Nhóm</th>
+								<th class="text-center">10,000đ</th>
+								<th class="text-center">20,000đ</th>
+								<th class="text-center">30,000đ</th>
+								<th class="text-center">50,000đ</th>
+								<th class="text-center">100,000đ</th>
+								<th class="text-center">200,000đ</th>
+								<th class="text-center">300,000đ</th>
+								<th class="text-center">500,000đ</th>
+								<th class="text-center">1,000,000đ</th>
+							</tr>
+							</thead>
+							<tbody class="text-center">
+							<tr>
+								<td class="text-xs-nowrap"><b>Tổng đại lý</b></td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>12%</td>
+								<td>12%</td>
+								<td>13%</td>
+								<td>13%</td>
+								<td>15%</td>
+								<td>15%</td>
+							</tr>
+							<tr>
+								<td class="text-xs-nowrap"><b>Đại lý</b></td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>13%</td>
+								<td>13%</td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>16%</td>
+								<td>16%</td>
+							</tr>
+							<tr>
+								<td class="text-xs-nowrap"><b>Thành viên</b></td>
+								<td>17%</td>
+								<td>17%</td>
+								<td>17%</td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>16%</td>
+								<td>16%</td>
+								<td>18%</td>
+								<td>18%</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="tab-vietnammobile">
+					<div class="table-responsive">
+						<table class="table table-bordered table-striped table-theme">
+							<thead class="theme-gradient text-white">
+							<tr class="table-theme_head">
+								<th class="text-center">Nhóm</th>
+								<th class="text-center">10,000đ</th>
+								<th class="text-center">20,000đ</th>
+								<th class="text-center">30,000đ</th>
+								<th class="text-center">50,000đ</th>
+								<th class="text-center">100,000đ</th>
+								<th class="text-center">200,000đ</th>
+								<th class="text-center">300,000đ</th>
+								<th class="text-center">500,000đ</th>
+								<th class="text-center">1,000,000đ</th>
+							</tr>
+							</thead>
+							<tbody class="text-center">
+							<tr>
+								<td class="text-xs-nowrap"><b>Tổng đại lý</b></td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>12%</td>
+								<td>12%</td>
+								<td>13%</td>
+								<td>13%</td>
+								<td>15%</td>
+								<td>15%</td>
+							</tr>
+							<tr>
+								<td class="text-xs-nowrap"><b>Đại lý</b></td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>13%</td>
+								<td>13%</td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>16%</td>
+								<td>16%</td>
+							</tr>
+							<tr>
+								<td class="text-xs-nowrap"><b>Thành viên</b></td>
+								<td>17%</td>
+								<td>17%</td>
+								<td>17%</td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>16%</td>
+								<td>16%</td>
+								<td>18%</td>
+								<td>18%</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="tab-zing">
+					<div class="table-responsive">
+						<table class="table table-bordered table-striped table-theme">
+							<thead class="theme-gradient text-white">
+							<tr class="table-theme_head">
+								<th class="text-center">Nhóm</th>
+								<th class="text-center">10,000đ</th>
+								<th class="text-center">20,000đ</th>
+								<th class="text-center">30,000đ</th>
+								<th class="text-center">50,000đ</th>
+								<th class="text-center">100,000đ</th>
+								<th class="text-center">200,000đ</th>
+								<th class="text-center">300,000đ</th>
+								<th class="text-center">500,000đ</th>
+								<th class="text-center">1,000,000đ</th>
+							</tr>
+							</thead>
+							<tbody class="text-center">
+							<tr>
+								<td class="text-xs-nowrap"><b>Tổng đại lý</b></td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>12%</td>
+								<td>12%</td>
+								<td>13%</td>
+								<td>13%</td>
+								<td>15%</td>
+								<td>15%</td>
+							</tr>
+							<tr>
+								<td class="text-xs-nowrap"><b>Đại lý</b></td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>13%</td>
+								<td>13%</td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>16%</td>
+								<td>16%</td>
+							</tr>
+							<tr>
+								<td class="text-xs-nowrap"><b>Thành viên</b></td>
+								<td>17%</td>
+								<td>17%</td>
+								<td>17%</td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>16%</td>
+								<td>16%</td>
+								<td>18%</td>
+								<td>18%</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="tab-garena">
+					<div class="table-responsive">
+						<table class="table table-bordered table-striped table-theme">
+							<thead class="theme-gradient text-white">
+							<tr class="table-theme_head">
+								<th class="text-center">Nhóm</th>
+								<th class="text-center">10,000đ</th>
+								<th class="text-center">20,000đ</th>
+								<th class="text-center">30,000đ</th>
+								<th class="text-center">50,000đ</th>
+								<th class="text-center">100,000đ</th>
+								<th class="text-center">200,000đ</th>
+								<th class="text-center">300,000đ</th>
+								<th class="text-center">500,000đ</th>
+								<th class="text-center">1,000,000đ</th>
+							</tr>
+							</thead>
+							<tbody class="text-center">
+							<tr>
+								<td class="text-xs-nowrap"><b>Tổng đại lý</b></td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>12%</td>
+								<td>12%</td>
+								<td>13%</td>
+								<td>13%</td>
+								<td>15%</td>
+								<td>15%</td>
+							</tr>
+							<tr>
+								<td class="text-xs-nowrap"><b>Đại lý</b></td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>13%</td>
+								<td>13%</td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>16%</td>
+								<td>16%</td>
+							</tr>
+							<tr>
+								<td class="text-xs-nowrap"><b>Thành viên</b></td>
+								<td>17%</td>
+								<td>17%</td>
+								<td>17%</td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>16%</td>
+								<td>16%</td>
+								<td>18%</td>
+								<td>18%</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="tab-gate">
+					<div class="table-responsive">
+						<table class="table table-bordered table-striped table-theme">
+							<thead class="theme-gradient text-white">
+							<tr class="table-theme_head">
+								<th class="text-center">Nhóm</th>
+								<th class="text-center">10,000đ</th>
+								<th class="text-center">20,000đ</th>
+								<th class="text-center">30,000đ</th>
+								<th class="text-center">50,000đ</th>
+								<th class="text-center">100,000đ</th>
+								<th class="text-center">200,000đ</th>
+								<th class="text-center">300,000đ</th>
+								<th class="text-center">500,000đ</th>
+								<th class="text-center">1,000,000đ</th>
+							</tr>
+							</thead>
+							<tbody class="text-center">
+							<tr>
+								<td class="text-xs-nowrap"><b>Tổng đại lý</b></td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>12%</td>
+								<td>12%</td>
+								<td>13%</td>
+								<td>13%</td>
+								<td>15%</td>
+								<td>15%</td>
+							</tr>
+							<tr>
+								<td class="text-xs-nowrap"><b>Đại lý</b></td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>13%</td>
+								<td>13%</td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>16%</td>
+								<td>16%</td>
+							</tr>
+							<tr>
+								<td class="text-xs-nowrap"><b>Thành viên</b></td>
+								<td>17%</td>
+								<td>17%</td>
+								<td>17%</td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>16%</td>
+								<td>16%</td>
+								<td>18%</td>
+								<td>18%</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="tab-vcoin">
+					<div class="table-responsive">
+						<table class="table table-bordered table-striped table-theme">
+							<thead class="theme-gradient text-white">
+							<tr class="table-theme_head">
+								<th class="text-center">Nhóm</th>
+								<th class="text-center">10,000đ</th>
+								<th class="text-center">20,000đ</th>
+								<th class="text-center">30,000đ</th>
+								<th class="text-center">50,000đ</th>
+								<th class="text-center">100,000đ</th>
+								<th class="text-center">200,000đ</th>
+								<th class="text-center">300,000đ</th>
+								<th class="text-center">500,000đ</th>
+								<th class="text-center">1,000,000đ</th>
+							</tr>
+							</thead>
+							<tbody class="text-center">
+							<tr>
+								<td class="text-xs-nowrap"><b>Tổng đại lý</b></td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>12%</td>
+								<td>12%</td>
+								<td>13%</td>
+								<td>13%</td>
+								<td>15%</td>
+								<td>15%</td>
+							</tr>
+							<tr>
+								<td class="text-xs-nowrap"><b>Đại lý</b></td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>13%</td>
+								<td>13%</td>
+								<td>14%</td>
+								<td>14%</td>
+								<td>16%</td>
+								<td>16%</td>
+							</tr>
+							<tr>
+								<td class="text-xs-nowrap"><b>Thành viên</b></td>
+								<td>17%</td>
+								<td>17%</td>
+								<td>17%</td>
+								<td>15%</td>
+								<td>15%</td>
+								<td>16%</td>
+								<td>16%</td>
+								<td>18%</td>
+								<td>18%</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

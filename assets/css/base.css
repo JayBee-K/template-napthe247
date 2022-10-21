@@ -30,6 +30,7 @@ a, a:hover, a:focus {
 	-webkit-transition: var(--transition-default);
 }
 
+
 button, button:hover, button:focus {
 	-webkit-box-shadow: none !important;
 	box-shadow: none !important;
@@ -90,4 +91,12 @@ textarea:focus {
 
 .fancybox__container {
 	z-index: 999999;
+}
+
+a {
+	color: var(--primary-color);
+}
+
+a:hover {
+	color: var(--primary-hover);
 }

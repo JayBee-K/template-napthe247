@@ -1,472 +1,552 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <title>Template Nencer</title>
-    <meta name="description" content="Template Nencer">
-    <meta name="author" content="">
+	<title>Template Nencer</title>
+	<meta name="description" content="Template Nencer">
+	<meta name="author" content="">
 
-    <meta property="og:title" content="Template Nencer">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:description" content="Template Cpanel">
-    <meta property="og:image" content="">
+	<meta property="og:title" content="Template Nencer">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="Template Cpanel">
+	<meta property="og:image" content="">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
-          rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+		  rel="stylesheet">
 
-    <link rel="icon" href="/assets/images/favicon.png">
-    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
-    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./assets/plugins/fancyBox/jquery.fancybox.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="icon" href="/assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="/assets/images/favicon.png">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./assets/plugins/fancyBox/jquery.fancybox.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
 
-    <style>
-        :root {
-            --primary-color: #61c758;
-            --primary-hover: #2ab9a5;
-            --primary-rgb: 76, 187, 139;
+	<style>
+		:root {
+			--primary-color: #61c758;
+			--primary-hover: #2ab9a5;
+			--primary-rgb: 76, 187, 139;
 
-            --secondary-color: #dc3545;
-            --secondary-hover: #b41d2c;
-            --secondary-rgb: 220, 53, 69;
-        }
-    </style>
+			--secondary-color: #dc3545;
+			--secondary-hover: #b41d2c;
+			--secondary-rgb: 220, 53, 69;
+		}
+	</style>
 </head>
 <body>
 
 <div id="header" class="header">
-    <div class="header-top">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="header-contact">
-                        <a href="tel:9999999999" class="header-contact_item">
-                            <b>Phone:</b>
-                            9999999999
-                        </a>
-                        <a href="mailto:demo@gmail.com" class="header-contact_item">
-                            <b>Email:</b>
-                            demo@gmail.com
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="header-grid d-flex align-items-center justify-content-lg-end">
-                        <div class="header-users d-flex align-items-center">
-                            <div class="header-users_item">
-                                <a href=""
-                                   class="header-users_item--btn header-users_item--login theme-gradient theme-gradient_hover">
-                                    Đăng nhập
-                                </a>
-                            </div>
-                            <div class="header-users_item">
-                                <a href="" class="header-users_item--btn header-users_item--register">
-                                    Đăng ký
-                                </a>
-                            </div>
-                        </div>
-                        <div class="header-social d-flex align-items-center justify-content-lg-end">
-                            <span>Hỗ trợ:</span>
-                            <div class="header-social_grid d-flex align-items-center">
-                                <a href="" class="header-social_grid--item">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="" class="header-social_grid--item">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="" class="header-social_grid--item">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="header-main">
-        <div class="container">
-            <div class="header-main_inner d-flex align-items-center">
-                <div class="header-logo">
-                    <a href="" class="d-inline-flex align-middle">
-                        <img style="height: 40px" src="/assets/images/logo.png">
-                    </a>
-                </div>
-                <div class="header-navigation ms-lg-auto">
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="">Đổi Thẻ Cào</a>
-                        </li>
-                        <li>
-                            <a href="">Đổi Tiền Sim</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">Nạp Tiền <i class="far fa-angle-down"></i></a>
-                            <ul class="list-unstyled mb-0 theme-gradient_before">
-                                <li>
-                                    <a href="">Nạp Từ Ngân Hàng</a>
-                                </li>
-                                <li>
-                                    <a href="">Nạp Từ Thẻ Cào</a>
-                                </li>
-                                <li>
-                                    <a href="">Nạp Từ Sims</a>
-                                </li>
-                            </ul>
-                        <li>
-                            <a href="">Chuyển Tiền</a>
-                        </li>
-                        <li>
-                            <a href="">Rút Tiền (Tự Động)</a>
-                        </li>
-                        <li>
-                            <a href="">Rút Momo (Tự Động)</a>
-                        </li>
-                        <li>
-                            <a href="">Tích Hợp API</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">Tin Tức <i class="far fa-angle-down"></i></a>
-                            <ul class="list-unstyled mb-0 theme-gradient_before">
-                                <li>
-                                    <a href="">Hướng dẫn</a>
-                                </li>
-                                <li>
-                                    <a href="">Khuyến Mãi</a>
-                                </li>
-                                <li>
-                                    <a href="">Thông Báo</a>
-                                </li>
-                                <li>
-                                    <a href="">Tin tức</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="header-overlay" class="header-overlay"></div>
+	<div class="header-top">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="header-contact">
+						<a href="tel:9999999999" class="header-contact_item">
+							<b>Phone:</b>
+							9999999999
+						</a>
+						<a href="mailto:demo@gmail.com" class="header-contact_item">
+							<b>Email:</b>
+							demo@gmail.com
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="header-grid d-flex align-items-center justify-content-lg-end">
+						<div class="header-users d-flex align-items-center">
+							<div class="header-users_item">
+								<a href=""
+								   class="header-users_item--btn header-users_item--login theme-gradient theme-gradient_hover">
+									Đăng nhập
+								</a>
+							</div>
+							<div class="header-users_item">
+								<a href="" class="header-users_item--btn header-users_item--register">
+									Đăng ký
+								</a>
+							</div>
+						</div>
+						<div class="header-social d-flex align-items-center justify-content-lg-end">
+							<span>Hỗ trợ:</span>
+							<div class="header-social_grid d-flex align-items-center">
+								<a href="" class="header-social_grid--item">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+								<a href="" class="header-social_grid--item">
+									<i class="fab fa-instagram"></i>
+								</a>
+								<a href="" class="header-social_grid--item">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-main">
+		<div class="container">
+			<div class="header-main_inner d-flex align-items-center">
+				<div class="header-logo">
+					<a href="" class="d-inline-flex align-middle">
+						<img style="height: 40px" src="/assets/images/logo.png">
+					</a>
+				</div>
+				<div class="header-navigation ms-lg-auto">
+					<ul class="list-unstyled mb-0">
+						<li>
+							<a href="">Đổi Thẻ Cào</a>
+						</li>
+						<li>
+							<a href="">Đổi Tiền Sim</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Nạp Tiền <i class="far fa-angle-down"></i></a>
+							<ul class="list-unstyled mb-0 theme-gradient_before">
+								<li>
+									<a href="">Nạp Từ Ngân Hàng</a>
+								</li>
+								<li>
+									<a href="">Nạp Từ Thẻ Cào</a>
+								</li>
+								<li>
+									<a href="">Nạp Từ Sims</a>
+								</li>
+							</ul>
+						<li>
+							<a href="">Chuyển Tiền</a>
+						</li>
+						<li>
+							<a href="">Rút Tiền (Tự Động)</a>
+						</li>
+						<li>
+							<a href="">Rút Momo (Tự Động)</a>
+						</li>
+						<li>
+							<a href="">Tích Hợp API</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Tin Tức <i class="far fa-angle-down"></i></a>
+							<ul class="list-unstyled mb-0 theme-gradient_before">
+								<li>
+									<a href="">Hướng dẫn</a>
+								</li>
+								<li>
+									<a href="">Khuyến Mãi</a>
+								</li>
+								<li>
+									<a href="">Thông Báo</a>
+								</li>
+								<li>
+									<a href="">Tin tức</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="header-overlay" class="header-overlay"></div>
 </div>
 <div id="main" class="main">
-    <div class="breadcrumb-image position-relative theme-gradient pseudo background-cover"
-         style="--image: url('/assets/images/pattern.png')">
-        <div class="position-relative z-index-2">
-            <div class="container">
-                <h1 class="mb-0 breadcrumb-image_title">
-                    Rút tiền về ngân hàng
-                </h1>
-            </div>
-        </div>
-    </div>
-    <div class="section-gap">
-        <div class="container">
-            <div class="alert alert-warning">
-                Để bảo mật tài khoản, hình thức bảo mật thanh toán phải từ mật khẩu cấp 2 trở lên
-                <a href="" class="primary-text">Cài đặt bảo mật</a>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="section-heading_decor">
-                        <div class="title">
-                            Rút tiền về&nbsp;<span>ngân hàng</span>
-                        </div>
-                    </div>
-                    <div class="form-theme">
-                        <div class="form-theme_item">
-                            <div class="form-theme_item--label">
-                                Ngân hàng <span class="text-danger">(*)</span>
-                            </div>
-                            <div class="form-theme_item--input">
-                                <select name="" id="">
-                                    <option value="">VTB - Vietinbank - Ngân hàng TMCP Công Thương Việt Nam</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-theme_item">
-                            <div class="form-theme_item--label">
-                                Số tài khoản: <span class="text-danger">(*)</span>
-                            </div>
-                            <div class="form-theme_item--input form-theme_item--group">
-                                <input type="text" placeholder="Số tài khoản">
-                                <button type="button"
-                                        class="button-theme theme-gradient_hover theme-gradient">
-                                    Kiểm tra
-                                </button>
-                            </div>
-                            <div class="form-theme_item--desc text-danger">
-                                Tài khoản không tồn tại trong ngân hàng Vietinbank
-                            </div>
-                        </div>
-                        <div class="form-theme_item">
-                            <div class="form-theme_item--label">
-                                Chủ tài khoản: <span class="text-danger">(*)</span>
-                            </div>
-                            <div class="form-theme_item--input">
-                                <input type="text" placeholder="Chủ tài khoản" disabled>
-                            </div>
-                        </div>
-                        <div class="form-theme_item">
-                            <div class="form-theme_item--label">
-                                Số tiền rút:
-                                <span class="text-danger">(*)</span>(Tối đa 0 VNĐ)
-                            </div>
-                            <div class="form-theme_item--input form-theme_item--group">
-                                <input type="text" placeholder="Số tiền thực nhận (tối thiểu: 50,000đ)">
-                                <button type="button"
-                                        class="button-theme theme-gradient_hover theme-gradient">
-                                    Max
-                                </button>
-                            </div>
-                            <div class="form-theme_item--desc">
-                                Số tiền rút: 0 VNĐ
-                                <br> Phí rút: <b class="text-dark">Miễn phí</b> - Tổng cộng: <b
-                                    class="text-danger">0</b> VNĐ
-                                <br> Số tiền rút tối
-                                thiểu/lần 10,000đ và tối đa 300,000,000đ
-                            </div>
-                        </div>
-                        <div class="form-theme_item">
-                            <div class="form-theme_item--label">
-                                Nội dung: <span class="text-danger">(*) <span class="fst-italic">Vui lòng không nhập dấu hoặc ký tự đặc biệt</span></span>
-                            </div>
-                            <div class="form-theme_item--input">
-                                <input type="text" placeholder="Nội dung (NAPTHE247.VN)">
-                            </div>
-                        </div>
-                        <div class="form-theme_item">
-                            <div class="form-theme_item--label">
-                                Mật khẩu đăng nhập: <span class="text-danger">(*)</span>
-                            </div>
-                            <div class="form-theme_item--input">
-                                <input type="text" placeholder="Mật khẩu đăng nhập">
-                            </div>
-                        </div>
-                        <div class="form-theme_item">
-                            <div class="form-theme_item--label">
-                                Lưu thông tin tài khoản: (Không bắt buộc)
-                            </div>
-                            <div class="form-theme_item--input">
-                                <input type="text" placeholder="Tên gợi nhớ">
-                            </div>
-                        </div>
-                        <div class="form-theme_item">
-                            <button class="button-theme theme-gradient theme-gradient_hover w-100">Thực hiện
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="section-heading_decor">
-                        <div class="title">
-                            Tài khoản&nbsp;<span>đã lưu</span>
-                        </div>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-striped table-theme">
-                            <thead class="theme-gradient text-white">
-                            <tr>
-                                <th>
-                                    Tên ghi chú
-                                </th>
-                                <th>
-                                    Ngân hàng
-                                </th>
-                                <th>
-                                    Số tài khoản
-                                </th>
-                                <th>
-                                    Chủ tài khoản
-                                </th>
-                                <th class="text-center">
-                                    Thao tác
-                                </th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th>Nguyễn Văn A</th>
-                                <td>Vietcombank</td>
-                                <td>090909090909</td>
-                                <td>Nguyễn Văn A</td>
-                                <td class="text-center">
-                                    <a href="" class="btn btn-primary btn-sm">
-                                        <i class="fas fa-edit"></i>
-                                    </a>
-                                    <a href="" class="btn btn-danger btn-sm">
-                                        <i class="fas fa-trash-alt"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Nguyễn Văn A</th>
-                                <td>Vietcombank</td>
-                                <td>090909090909</td>
-                                <td>Nguyễn Văn A</td>
-                                <td class="text-center">
-                                    <a href="" class="btn btn-primary btn-sm">
-                                        <i class="fas fa-edit"></i>
-                                    </a>
-                                    <a href="" class="btn btn-danger btn-sm">
-                                        <i class="fas fa-trash-alt"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="col-12 mt-5">
-                    <div class="section-heading_decor">
-                        <div class="title">
-                            Rút tiền&nbsp;<span>gần đây</span>
-                        </div>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-striped table-theme">
-                            <thead class="theme-gradient text-white">
-                            <tr>
-                                <th>
-                                    Thời gian
-                                </th>
-                                <th>
-                                    Ví
-                                </th>
-                                <th>
-                                    Số tài khoản
-                                </th>
-                                <th>
-                                    Chủ tài khoản
-                                </th>
-                                <th>
-                                    Số tiền
-                                </th>
-                                <th class="text-center">
-                                    Trạng thái
-                                </th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th>20:40 18/10/2022</th>
-                                <td>Momo</td>
-                                <td>090909090909</td>
-                                <td>Nguyễn Văn A</td>
-                                <td>100,000 đồng</td>
-                                <td class="text-center">
-                                    <div class="badge bg-success">Thành công</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>20:40 18/10/2022</th>
-                                <td>Momo</td>
-                                <td>090909090909</td>
-                                <td>Nguyễn Văn A</td>
-                                <td>100,000 đồng</td>
-                                <td class="text-center">
-                                    <div class="badge bg-warning">Đang xử lý</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>20:40 18/10/2022</th>
-                                <td>Momo</td>
-                                <td>090909090909</td>
-                                <td>Nguyễn Văn A</td>
-                                <td>100,000 đồng</td>
-                                <td class="text-center">
-                                    <div class="badge bg-danger">Bị huỷ</div>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="breadcrumb-image position-relative theme-gradient pseudo background-cover"
+		 style="--image: url('/assets/images/pattern.png')">
+		<div class="position-relative z-index-2">
+			<div class="container">
+				<h1 class="mb-0 breadcrumb-image_title">
+					Rút tiền về ngân hàng
+				</h1>
+			</div>
+		</div>
+	</div>
+	<div class="section-gap">
+		<div class="container">
+			<div class="row g-4">
+				<div class="col-lg-6">
+					<div class="section-heading_decor">
+						<div class="title">
+							Rút tiền về&nbsp;<span>ngân hàng</span>
+						</div>
+					</div>
+					<div class="form-theme">
+						<div class="form-theme_item">
+							<div class="form-theme_item--label">
+								Ngân hàng <span class="text-danger">(*)</span>
+							</div>
+							<div class="form-theme_item--input">
+								<select name="" id="">
+									<option value="">VTB - Vietinbank - Ngân hàng TMCP Công Thương Việt Nam</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-theme_item">
+							<div class="form-theme_item--label">
+								Số tiền rút:
+								<span class="text-danger">(*)</span>(Tối đa 0 VNĐ)
+							</div>
+							<div class="form-theme_item--input form-theme_item--group">
+								<input type="text" placeholder="Số tiền thực nhận (tối thiểu: 50,000đ)">
+								<button type="button"
+										class="button-theme theme-gradient_hover theme-gradient">
+									Max
+								</button>
+							</div>
+							<div class="form-theme_item--desc">
+								Số tiền rút: 0 VNĐ
+								<br> Phí rút: <b class="text-dark">Miễn phí</b> - Tổng cộng: <b
+									class="text-danger">0</b> VNĐ
+								<br> Số tiền rút tối
+								thiểu/lần 10,000đ và tối đa 300,000,000đ
+							</div>
+						</div>
+						<div class="form-theme_item">
+							<button class="button-theme theme-gradient theme-gradient_hover w-100">
+								Rút tiền
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="section-tables_item">
+						<div class="section-heading_decor">
+							<div class="title">
+								Hạn mức và phí&nbsp;<span>rút tiền</span>
+							</div>
+						</div>
+						<div class="table-responsive">
+							<table class="table table-bordered table-striped table-theme">
+								<tbody>
+								<tr>
+									<td>Tổng hạn mức ngày</td>
+									<th>50,000,000VNĐ</th>
+								</tr>
+								<tr>
+									<td>Số tiền tối thiểu</td>
+									<th>10,000VNĐ</th>
+								</tr>
+								<tr>
+									<td>Số tiền tối đa</td>
+									<th>5,000,000VNĐ</th>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="section-tables_item">
+						<div class="table-responsive">
+							<table class="table table-bordered table-striped table-theme">
+								<thead class="theme-gradient text-white">
+								<tr class="table-theme_head">
+									<th>Cổng thanh toán</th>
+									<th class="text-center text-nowrap">Phí cố định</th>
+									<th class="text-center text-nowrap">Phí %</th>
+									<th class="text-center text-nowrap">Mức rút không phí</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>NGÂN HÀNG - VIETCOMBANK</td>
+									<td class="text-center">0 VND</td>
+									<td class="text-center">0.5%</td>
+									<td class="text-center">1,000,000đ</td>
+								</tr>
+								<tr>
+									<td>NGÂN HÀNG - BIDV</td>
+									<td class="text-center">0 VND</td>
+									<td class="text-center">0.5%</td>
+									<td class="text-center">1,000,000đ</td>
+								</tr>
+								<tr>
+									<td>NGÂN HÀNG - VIETINBANK</td>
+									<td class="text-center">0 VND</td>
+									<td class="text-center">0.5%</td>
+									<td class="text-center">1,000,000đ</td>
+								</tr>
+								<tr>
+									<td>NGÂN HÀNG - AGRIBANK</td>
+									<td class="text-center">0 VND</td>
+									<td class="text-center">0.5%</td>
+									<td class="text-center">1,000,000đ</td>
+								</tr>
+								<tr>
+									<td>NGÂN HÀNG - SACOMBANK</td>
+									<td class="text-center">0 VND</td>
+									<td class="text-center">0.5%</td>
+									<td class="text-center">1,000,000đ</td>
+								</tr>
+								<tr>
+									<td>NGÂN HÀNG - DONGABANK</td>
+									<td class="text-center">0 VND</td>
+									<td class="text-center">0.5%</td>
+									<td class="text-center">1,000,000đ</td>
+								</tr>
+								<tr>
+									<td>NGÂN HÀNG - VPBANK</td>
+									<td class="text-center">0 VND</td>
+									<td class="text-center">0.5%</td>
+									<td class="text-center">1,000,000đ</td>
+								</tr>
+								<tr>
+									<td>NGÂN HÀNG - TPBANK</td>
+									<td class="text-center">0 VND</td>
+									<td class="text-center">0.5%</td>
+									<td class="text-center">1,000,000đ</td>
+								</tr>
+								<tr>
+									<td>NGÂN HÀNG - MB BANK</td>
+									<td class="text-center">0 VND</td>
+									<td class="text-center">0.5%</td>
+									<td class="text-center">1,000,000đ</td>
+								</tr>
+								<tr>
+									<td>NGÂN HÀNG - EXIMBANK</td>
+									<td class="text-center">0 VND</td>
+									<td class="text-center">0.5%</td>
+									<td class="text-center">1,000,000đ</td>
+								</tr>
+								<tr>
+									<td>NGÂN HÀNG - TECHCOMBANK</td>
+									<td class="text-center">0 VND</td>
+									<td class="text-center">0.5%</td>
+									<td class="text-center">1,000,000đ</td>
+								</tr>
+								<tr>
+									<td>NGÂN HÀNG - VIETBANK</td>
+									<td class="text-center">0 VND</td>
+									<td class="text-center">0.5%</td>
+									<td class="text-center">1,000,000đ</td>
+								</tr>
+								<tr>
+									<td>NGAN HANG TMCP HANG HAI VIET NAM (MSB)</td>
+									<td class="text-center">0 VND</td>
+									<td class="text-center">0.5%</td>
+									<td class="text-center">1,000,000đ</td>
+								</tr>
+								<tr>
+									<td>NGAN HANG TNHH MTV CIMB (CIMB)</td>
+									<td class="text-center">0 VND</td>
+									<td class="text-center">0.5%</td>
+									<td class="text-center">1,000,000đ</td>
+								</tr>
+								<tr>
+									<td>NGAN HANG TMCP QUOC TE VIB</td>
+									<td class="text-center">500 VND</td>
+									<td class="text-center">0%</td>
+									<td class="text-center"></td>
+								</tr>
+								<tr>
+									<td>TheSieuRe (Duyệt Chậm)</td>
+									<td class="text-center">5,000đ</td>
+									<td class="text-center">0%</td>
+									<td class="text-center"></td>
+								</tr>
+								<tr>
+									<td>NGÂN HÀNG OCB</td>
+									<td class="text-center">0 VND</td>
+									<td class="text-center">0.5%</td>
+									<td class="text-center"></td>
+								</tr>
+								<tr>
+									<td>NGÂN HÀNG - ACB</td>
+									<td class="text-center">0 VND</td>
+									<td class="text-center">0.5%</td>
+									<td class="text-center">1,000,000đ</td>
+								</tr>
+								<tr>
+									<td>Ví Điện Tử MoMo</td>
+									<td class="text-center">0 VND</td>
+									<td class="text-center">0.5%</td>
+									<td class="text-center">1,000,000đ</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 mt-3">
+					<div class="section-heading_decor">
+						<div class="title">
+							Rút tiền&nbsp;<span>gần đây</span>
+						</div>
+					</div>
+					<div class="table-responsive">
+						<table class="table table-bordered table-striped table-theme">
+							<thead class="theme-gradient text-white">
+							<tr>
+								<th>
+									Thời gian
+								</th>
+								<th>
+									Ví
+								</th>
+								<th>
+									Số tài khoản
+								</th>
+								<th>
+									Chủ tài khoản
+								</th>
+								<th>
+									Số tiền
+								</th>
+								<th class="text-center">
+									Trạng thái
+								</th>
+								<th class="text-center">
+									Hành động
+								</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<th>20:40 18/10/2022</th>
+								<td>Momo</td>
+								<td>090909090909</td>
+								<td>Nguyễn Văn A</td>
+								<td>100,000 đồng</td>
+								<td class="text-center">
+									<div class="badge bg-success">Thành công</div>
+								</td>
+								<td class="text-center">
+									<a href="" class="btn btn-primary btn-sm">
+										<i class="fas fa-edit"></i>
+										Thay đổi
+									</a>
+									<a href="" class="btn btn-danger btn-sm">
+										<i class="fas fa-trash-alt"></i>
+										Xóa
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<th>20:40 18/10/2022</th>
+								<td>Momo</td>
+								<td>090909090909</td>
+								<td>Nguyễn Văn A</td>
+								<td>100,000 đồng</td>
+								<td class="text-center">
+									<div class="badge bg-warning">Đang xử lý</div>
+								</td>
+								<td class="text-center">
+									<a href="" class="btn btn-primary btn-sm">
+										<i class="fas fa-edit"></i>
+										Thay đổi
+									</a>
+									<a href="" class="btn btn-danger btn-sm">
+										<i class="fas fa-trash-alt"></i>
+										Xóa
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<th>20:40 18/10/2022</th>
+								<td>Momo</td>
+								<td>090909090909</td>
+								<td>Nguyễn Văn A</td>
+								<td>100,000 đồng</td>
+								<td class="text-center">
+									<div class="badge bg-danger">Bị huỷ</div>
+								</td>
+								<td class="text-center">
+									<a href="" class="btn btn-primary btn-sm">
+										<i class="fas fa-edit"></i>
+										Thay đổi
+									</a>
+									<a href="" class="btn btn-danger btn-sm">
+										<i class="fas fa-trash-alt"></i>
+										Xóa
+									</a>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <footer id="footer" class="footer">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-lg-4">
-                <div class="footer-item">
-                    <div class="footer-logo">
-                        <a href="" class="d-inline-flex align-middle">
-                            <img style="height: 40px" src="/assets/images/logo.png">
-                        </a>
-                    </div>
-                    <div class="footer-text">
-                        <b>CÔNG TY CỔ PHẦN THƯƠNG MẠI ĐIỆN TỬ DOICARD</b>
-                        <br>
-                        <b>MST: 2400802918</b>
-                        <br>
-                        <b>Số Nhà 62, Ngõ 127 Phùng Khoang, Trung Văn, Nam Từ Liêm, Hà Nội.</b>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="footer-item footer-middle">
-                    <div class="footer-link">
-                        <a href="">
-                            <i class="fas fa-headphones-alt"></i>
-                            0204.629.2222
-                        </a>
-                    </div>
-                    <div class="footer-link">
-                        <a href="">
-                            <i class="fal fa-envelope"></i>
-                            cskh@napthe247.vn
-                        </a>
-                    </div>
-                    <div class="footer-link">
-                        <a href="">
-                            <i class="fal fa-clock"></i>
-                            Time: 08:30 - 22:00
-                        </a>
-                    </div>
-                    <div class="footer-link">
-                        <span>© Copyright 2022. All Rights Reserved.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="footer-item">
-                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline"
-                         data-width="" data-height="130" data-small-header="false" data-adapt-container-width="true"
-                         data-hide-cover="false" data-show-facepile="false">
-                        <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
-                            <a
-                                    href="https://www.facebook.com/facebook">Facebook
-                            </a>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="row g-4">
+			<div class="col-lg-4">
+				<div class="footer-item">
+					<div class="footer-logo">
+						<a href="" class="d-inline-flex align-middle">
+							<img style="height: 40px" src="/assets/images/logo.png">
+						</a>
+					</div>
+					<div class="footer-text">
+						<b>CÔNG TY CỔ PHẦN THƯƠNG MẠI ĐIỆN TỬ DOICARD</b>
+						<br>
+						<b>MST: 2400802918</b>
+						<br>
+						<b>Số Nhà 62, Ngõ 127 Phùng Khoang, Trung Văn, Nam Từ Liêm, Hà Nội.</b>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="footer-item footer-middle">
+					<div class="footer-link">
+						<a href="">
+							<i class="fas fa-headphones-alt"></i>
+							0204.629.2222
+						</a>
+					</div>
+					<div class="footer-link">
+						<a href="">
+							<i class="fal fa-envelope"></i>
+							cskh@napthe247.vn
+						</a>
+					</div>
+					<div class="footer-link">
+						<a href="">
+							<i class="fal fa-clock"></i>
+							Time: 08:30 - 22:00
+						</a>
+					</div>
+					<div class="footer-link">
+						<span>© Copyright 2022. All Rights Reserved.</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="footer-item">
+					<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline"
+						 data-width="" data-height="130" data-small-header="false" data-adapt-container-width="true"
+						 data-hide-cover="false" data-show-facepile="false">
+						<blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+							<a
+									href="https://www.facebook.com/facebook">Facebook
+							</a>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </footer>
 
 <a href="javascript:void(0)" id="scroll-top" class="scroll-top button-theme theme-gradient theme-gradient_hover"><i
-        class="fal fa-angle-up"></i></a>
+		class="fal fa-angle-up"></i></a>
 
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0"
-        nonce="fYbHVSw8"></script>
+		nonce="fYbHVSw8"></script>
 
 <script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
 <script type="text/javascript"
-        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+		src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/fancyBox/jquery.fancybox.js"></script>
 <script type="text/javascript" src="./assets/js/app.js"></script>
