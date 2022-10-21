@@ -164,151 +164,187 @@
         <div class="position-relative z-index-2">
             <div class="container">
                 <h1 class="mb-0 breadcrumb-image_title">
-                    Nạp tiền điện thoại
+                    Lịch sử giao dịch
                 </h1>
             </div>
         </div>
     </div>
     <div class="section-gap">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="section-heading_decor">
-                        <div class="title">
-                            Nạp tiền &nbsp;<span>điện thoại</span>
-                        </div>
-                    </div>
+            <div class="mb-2">
+                <div class="form-theme">
                     <form action="">
-                        <div class="form-theme">
-                            <div class="form-theme_item">
-                                <div class="form-theme_item--label">
-                                    Loại dịch vụ <span class="text-danger">(*)</span>
-                                </div>
-                                <div class="form-theme_item--input">
-                                    <select name="" id="">
-                                        <option value="">Loại dịch vụ</option>
-                                        <option selected="">
-                                            Nạp Viettel trả trước (có KM)
-                                        </option>
-                                        <option>
-                                            Nạp Viettel trả sau
-                                        </option>
-                                        <option>
-                                            Nạp Vinaphone trả trước, trả sau
-                                        </option>
-                                        <option>
-                                            Nạp Vina trả trước (không KM)
-                                        </option>
-                                        <option>
-                                            Nạp Mobifone trả trước (Không KM)
-                                        </option>
-                                    </select>
+                        <div class="row g-2">
+                            <div class="col-lg col-md-3 col-6">
+                                <div class="form-theme_item">
+                                    <div class="form-theme_item--input">
+                                        <input value="" name="" placeholder="Đơn hàng">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-theme_item">
-                                <div class="form-theme_item--label">
-                                    Số tiền nạp <span class="text-danger">(*)</span>
-                                </div>
-                                <div class="form-theme_item--input">
-                                    <select id="" name="">
-                                        <option value="">--- Số tiền nạp---</option>
-                                        <option value="">20,000 đ</option>
-                                        <option value="">50,000 đ</option>
-                                        <option value="">100,000 đ</option>
-                                        <option value="">200,000 đ</option>
-                                    </select>
+                            <div class="col-lg col-md-3 col-6">
+                                <div class="form-theme_item">
+                                    <div class="form-theme_item--input">
+                                        <input value="" name="" placeholder="Tài khoản nhận">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-theme_item">
-                                <div class="form-theme_item--label">
-                                    Số điện thoại <span class="text-danger">(*)</span>
-                                </div>
-                                <div class="form-theme_item--input">
-                                    <input type="text" placeholder="Số điện thoại">
-                                </div>
-                            </div>
-                            <div class="form-theme_item">
-                                <div class="form-theme_item--label">
-                                    Chiết khấu <span class="text-danger">(*)</span>
-                                </div>
-                                <div class="form-theme_item--input">
-                                    <input type="text" placeholder="Chiết khấu" disabled>
-                                </div>
-                            </div>
-                            <div class="form-theme_item">
-                                <div class="form-theme_item--label">
-                                    Số tiền thanh toán <span class="text-danger">(*)</span>
-                                </div>
-                                <div class="form-theme_item--input">
-                                    <input type="text" placeholder="Số tiền thanh toán" disabled>
+                            <div class="col-lg col-md-3 col-6">
+                                <div class="form-theme_item">
+                                    <div class="form-theme_item--input">
+                                        <select name="" class="">
+                                            <option value="" selected="selected">Mã dịch vụ</option>
+                                            <option value="">Nạp Viettel trả sau</option>
+                                            <option value="">Nạp Viettel trả trước</option>
+                                            <option value="">Nạp Vinaphone trả trước</option>
+                                            <option value="">Nạp Vinaphone trả sau</option>
+                                            <option value="">Nạp Mobifone trả sau</option>
+                                            <option value="">Nạp Mobifone trả trước</option>
+                                            <option value="">Nạp Vietnamobile trả trước</option>
+                                            <option value="">Avatar 3</option>
+                                            <option value="">Avatar Musik</option>
+                                            <option value="">Ninja</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-theme_item">
-                                <div class="form-theme_item--label">
-                                    Cổng thanh toán <span class="text-danger">(*)</span>
-                                </div>
-                                <div class="form-theme_item--input">
-                                    <select id="" name="">
-                                        <option value="">Ngân hàng</option>
-                                        <option value="">Ví điện tử</option>
-                                    </select>
+                            <div class="col-lg col-md-3 col-6">
+                                <div class="form-theme_item">
+                                    <div class="form-theme_item--input">
+                                        <select name="status" class="">
+                                            <option value="" selected="selected">Trạng thái</option>
+                                            <option value="">Thành công</option>
+                                            <option value="">Chờ xử lý</option>
+                                            <option value="">Hủy bỏ</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-theme_item">
-                                <button class="button-theme theme-gradient theme-gradient_hover w-100">
-                                    Thanh toán
+                            <div class="col-lg col-md-3 col-6">
+                                <div class="form-theme_item">
+                                    <div class="form-theme_item--input form-theme_item--icon">
+                                        <input value="2022-09-10" name="" type="date">
+                                        <div class="icon-ios"><!-- Giữ lại cái này cho em nha --></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg col-md-3 col-6">
+                                <div class="form-theme_item">
+                                    <div class="form-theme_item--input form-theme_item--icon">
+                                        <input name="" type="date">
+                                        <div class="icon-ios"><!-- Giữ lại cái này cho em nha --></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md flex-lg-grow-0 d-flex align-items-center px-0">
+                                <button class="btn button-theme btn-primary btn-small text-nowrap m-1 my-md-0"
+                                        type="submit">
+                                    <span class="fal fa-search me-1"></span>
+                                    Lọc
                                 </button>
+                                <button class="btn button-theme h-100 btn-success btn-small text-nowrap m-1 my-md-0"
+                                        type="submit">
+                                    <i class="fas fa-file-excel me-0"></i>
+                                </button>
+                                <a class="btn button-theme btn-danger btn-small text-nowrap m-1 my-md-0">
+                                    <i class="fa fa-trash-alt me-1"></i>
+                                    Bỏ lọc
+                                </a>
                             </div>
                         </div>
                     </form>
                 </div>
-                <div class="col-lg-6">
-                    <div class="border p-3 rounded-3 mb-4">
-                        <p>Nạp tiền tài khoản sim Viettel trả trước có được hưởng KM từ nhà mạng</p>
-
-                        <p><span style="color:#e74c3c">- Tỷ lệ mệnh giá thành công:</span> <span style="color:#9b59b6">20k 99%</span>,
-                            <span style="color:#2980b9">50k 96%</span>, <span
-                                    style="color:#d35400">100k 92%</span>,<span style="color:#f39c12"> </span><span
-                                    style="color:#1abc9c">200k 40%</span></p>
-
-                        <p>- Sau 5p không thành công sẽ tự động hủy đơn. Lý do hủy đơn do quá tải&nbsp;hoặc sdt không đủ
-                            điều kiện, Quý Khách có thể úp lại theo mệnh giá khác hoặc thời điểm khác.</p>
-
-                        <p><span style="color:#e74c3c">- SĐT viết liền không cách, 1 số điện thoại muốn nạp nhiều lần vui lòng chờ lần nạp trước có </span><span
-                                style="color:#000000"><strong>kết quả</strong></span><span style="color:#e74c3c"> mới úp tiếp</span>
-                        </p>
-                    </div>
-                    <div class="section-tables_item">
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-striped table-theme">
-                                <thead class="theme-gradient text-white">
-                                <tr class="table-theme_head">
-                                    <th>Nạp Viettel trả trước (có KM)</th>
-                                    <th>Chiết khấu</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>20,000đ</td>
-                                    <th>10%</th>
-                                </tr>
-                                <tr>
-                                    <td>50,000đ</td>
-                                    <th>10%</th>
-                                </tr>
-                                <tr>
-                                    <td>100,000đ</td>
-                                    <th>10%</th>
-                                </tr>
-                                <tr>
-                                    <td>200,000đ</td>
-                                    <th>10%</th>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-theme">
+                    <thead class="theme-gradient text-white">
+                    <tr>
+                        <th class="text-xs-nowrap">
+                            Thời gian
+                        </th>
+                        <th class="text-xs-nowrap">
+                            Ví
+                        </th>
+                        <th class="text-xs-nowrap">
+                            Số tài khoản
+                        </th>
+                        <th class="text-xs-nowrap">
+                            Chủ tài khoản
+                        </th>
+                        <th class="text-xs-nowrap">
+                            Số tiền
+                        </th>
+                        <th class="text-center text-xs-nowrap">
+                            Trạng thái
+                        </th>
+                        <th class="text-center text-xs-nowrap">
+                            Hành động
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>20:40 18/10/2022</th>
+                        <td>Momo</td>
+                        <td>090909090909</td>
+                        <td>Nguyễn Văn A</td>
+                        <td>100,000 đồng</td>
+                        <td class="text-center">
+                            <div class="badge bg-success">Thành công</div>
+                        </td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-primary btn-sm my-1 mt-md-0 text-xs-nowrap">
+                                <i class="fas fa-edit"></i>
+                                Thay đổi
+                            </a>
+                            <a href="" class="btn btn-danger btn-sm my-1 mt-md-0 text-xs-nowrap">
+                                <i class="fas fa-trash-alt"></i>
+                                Xóa
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>20:40 18/10/2022</th>
+                        <td>Momo</td>
+                        <td>090909090909</td>
+                        <td>Nguyễn Văn A</td>
+                        <td>100,000 đồng</td>
+                        <td class="text-center">
+                            <div class="badge bg-warning">Đang xử lý</div>
+                        </td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-primary btn-sm my-1 mt-md-0 text-xs-nowrap">
+                                <i class="fas fa-edit"></i>
+                                Thay đổi
+                            </a>
+                            <a href="" class="btn btn-danger btn-sm my-1 mt-md-0 text-xs-nowrap">
+                                <i class="fas fa-trash-alt"></i>
+                                Xóa
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>20:40 18/10/2022</th>
+                        <td>Momo</td>
+                        <td>090909090909</td>
+                        <td>Nguyễn Văn A</td>
+                        <td>100,000 đồng</td>
+                        <td class="text-center">
+                            <div class="badge bg-danger">Bị huỷ</div>
+                        </td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-primary btn-sm my-1 mt-md-0 text-xs-nowrap">
+                                <i class="fas fa-edit"></i>
+                                Thay đổi
+                            </a>
+                            <a href="" class="btn btn-danger btn-sm my-1 mt-md-0 text-xs-nowrap">
+                                <i class="fas fa-trash-alt"></i>
+                                Xóa
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

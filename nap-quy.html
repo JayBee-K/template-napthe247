@@ -164,63 +164,117 @@
         <div class="position-relative z-index-2">
             <div class="container">
                 <h1 class="mb-0 breadcrumb-image_title">
-                    Rút tiền về ngân hàng
+                    Nạp quỹ
                 </h1>
             </div>
         </div>
     </div>
     <div class="section-gap">
         <div class="container">
+            <div class="alert alert-danger">
+                <b>Lưu ý:</b> nạp quỹ bằng tài khoản ngân hàng của bạn. Nếu lợi dụng ATM của website để nhận tiền người
+                khác, rửa tiền, lừa đảo sẽ khóa vĩnh viễn! Thời gian đợi thanh toán đối đa 15 phút. Hệ thống tự động
+                cộng tiền 24/24. Vui lòng ghi đúng nội dung chuyển khoản.
+            </div>
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="section-heading_decor">
                         <div class="title">
-                            Rút tiền về&nbsp;<span>ngân hàng</span>
+                            Cách 1: Nạp quỹ theo &nbsp;<span>số điện thoại & QR</span>
                         </div>
                     </div>
-                    <div class="form-theme">
-                        <div class="form-theme_item">
-                            <div class="form-theme_item--label">
-                                Ngân hàng <span class="text-danger">(*)</span>
-                            </div>
-                            <div class="form-theme_item--input">
-                                <select name="" id="">
-                                    <option value="">VTB - Vietinbank - Ngân hàng TMCP Công Thương Việt Nam</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-theme_item">
-                            <div class="form-theme_item--label">
-                                Số tiền rút:
-                                <span class="text-danger">(*)</span>(Tối đa 0 VNĐ)
-                            </div>
-                            <div class="form-theme_item--input form-theme_item--group">
-                                <input type="text" placeholder="Số tiền thực nhận (tối thiểu: 50,000đ)">
-                                <button type="button"
-                                        class="button-theme theme-gradient_hover theme-gradient">
-                                    Max
+                    <table class="table table-bordered table-striped table-theme">
+                        <thead>
+                        <tr>
+                            <th>Ngân hàng</th>
+                            <th colspan="2">Ngân hàng ACB</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Số tài khoản</td>
+                            <td><b>17212121</b>
+                                <button type="button" class="btn btn-light btn-sm copy-value btn-vertical-top ml-1"
+                                        data-value="17212121">
+                                    <i class="fas fa-paste"></i>
                                 </button>
-                            </div>
-                            <div class="form-theme_item--desc">
-                                Số tiền rút: 0 VNĐ
-                                <br> Phí rút: <b class="text-dark">Miễn phí</b> - Tổng cộng: <b
-                                    class="text-danger">0</b> VNĐ
-                                <br> Số tiền rút tối
-                                thiểu/lần 10,000đ và tối đa 300,000,000đ
+                            </td>
+                            <td rowspan="3" class="bg-white">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img height="140" width="140"
+                                         src="https://printgo.vn/uploads/media/790919/tao-ma-qr-code-san-pham-1_1620927223.jpg"
+                                         class="img-fluid" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Chủ tài khoản</td>
+                            <td><b>Pham Van A</b>
+                                <button type="button"
+                                        class="copy-value button-theme button-theme_icon button-theme_icon--sm  theme-gradient theme-gradient_hover ms-1"
+                                        data-value="Pham Van A">
+                                    <i class="fas fa-paste"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nội dung thanh toán</td>
+                            <td><b class="text-danger">tratien 0943793989</b>
+                                <button type="button"
+                                        class="copy-value button-theme button-theme_icon button-theme_icon--sm theme-gradient theme-gradient_hover ms-1"
+                                        data-value="tratien 0943793989">
+                                    <i class="fas fa-paste"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="mt-4">
+                        <div class="section-heading_decor">
+                            <div class="title">
+                                Cách 2: Tạo yêu cầu &nbsp;<span>nạp quỹ</span>
                             </div>
                         </div>
-                        <div class="form-theme_item">
-                            <button class="button-theme theme-gradient theme-gradient_hover w-100">
-                                Rút tiền
-                            </button>
-                        </div>
+                        <form action="">
+                            <div class="form-theme">
+                                <div class="form-theme_item">
+                                    <div class="form-theme_item--label">
+                                        Số tiền nạp <span class="text-danger">(*)</span>
+                                    </div>
+                                    <div class="form-theme_item--input">
+                                        <input type="text" placeholder="Số tiền cần nạp">
+                                    </div>
+                                    <div class="form-theme_item--desc text-danger">
+                                        Tối thiểu 30,000 VND , Tối đa 500,000 VND
+                                    </div>
+                                </div>
+                                <div class="form-theme_item">
+                                    <div class="form-theme_item--label">
+                                        Cổng thanh toán <span class="text-danger">(*)</span>
+                                    </div>
+                                    <div class="form-theme_item--input">
+                                        <select name="" id="">
+                                            <option value="">Ví điện tử Momo</option>
+                                            <option value="">ATM Việt Nam (Internet Banking)</option>
+                                            <option value="">Perfect Money</option>
+                                            <option value="">Webmoney Transfer</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-theme_item">
+                                    <button class="button-theme theme-gradient theme-gradient_hover w-100">
+                                        Nạp quỹ
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="section-tables_item">
                         <div class="section-heading_decor">
                             <div class="title">
-                                Hạn mức và phí&nbsp;<span>rút tiền</span>
+                                Hạn mức và phí&nbsp;<span>nạp quỹ</span>
                             </div>
                         </div>
                         <div class="table-responsive">
@@ -228,15 +282,15 @@
                                 <tbody>
                                 <tr>
                                     <td>Tổng hạn mức ngày</td>
-                                    <th>50,000,000VNĐ</th>
+                                    <th>500,000VNĐ</th>
                                 </tr>
                                 <tr>
                                     <td>Số tiền tối thiểu</td>
-                                    <th>10,000VNĐ</th>
+                                    <th>30,000VNĐ</th>
                                 </tr>
                                 <tr>
                                     <td>Số tiền tối đa</td>
-                                    <th>5,000,000VNĐ</th>
+                                    <th>500,000VNĐ</th>
                                 </tr>
                                 </tbody>
                             </table>
@@ -248,120 +302,12 @@
                                 <thead class="theme-gradient text-white">
                                 <tr class="table-theme_head">
                                     <th class="text-xs-nowrap">Cổng thanh toán</th>
-                                    <th class="text-center text-nowrap">Phí cố định</th>
-                                    <th class="text-center text-nowrap">Phí %</th>
-                                    <th class="text-center text-nowrap">Mức rút không phí</th>
+                                    <th class="text-center text-xs-nowrap">Phí cố định</th>
+                                    <th class="text-center text-xs-nowrap">Phí %</th>
+                                    <th class="text-center text-xs-nowrap">Mức rút không phí</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td>NGÂN HÀNG - VIETCOMBANK</td>
-                                    <td class="text-center">0 VND</td>
-                                    <td class="text-center">0.5%</td>
-                                    <td class="text-center">1,000,000đ</td>
-                                </tr>
-                                <tr>
-                                    <td>NGÂN HÀNG - BIDV</td>
-                                    <td class="text-center">0 VND</td>
-                                    <td class="text-center">0.5%</td>
-                                    <td class="text-center">1,000,000đ</td>
-                                </tr>
-                                <tr>
-                                    <td>NGÂN HÀNG - VIETINBANK</td>
-                                    <td class="text-center">0 VND</td>
-                                    <td class="text-center">0.5%</td>
-                                    <td class="text-center">1,000,000đ</td>
-                                </tr>
-                                <tr>
-                                    <td>NGÂN HÀNG - AGRIBANK</td>
-                                    <td class="text-center">0 VND</td>
-                                    <td class="text-center">0.5%</td>
-                                    <td class="text-center">1,000,000đ</td>
-                                </tr>
-                                <tr>
-                                    <td>NGÂN HÀNG - SACOMBANK</td>
-                                    <td class="text-center">0 VND</td>
-                                    <td class="text-center">0.5%</td>
-                                    <td class="text-center">1,000,000đ</td>
-                                </tr>
-                                <tr>
-                                    <td>NGÂN HÀNG - DONGABANK</td>
-                                    <td class="text-center">0 VND</td>
-                                    <td class="text-center">0.5%</td>
-                                    <td class="text-center">1,000,000đ</td>
-                                </tr>
-                                <tr>
-                                    <td>NGÂN HÀNG - VPBANK</td>
-                                    <td class="text-center">0 VND</td>
-                                    <td class="text-center">0.5%</td>
-                                    <td class="text-center">1,000,000đ</td>
-                                </tr>
-                                <tr>
-                                    <td>NGÂN HÀNG - TPBANK</td>
-                                    <td class="text-center">0 VND</td>
-                                    <td class="text-center">0.5%</td>
-                                    <td class="text-center">1,000,000đ</td>
-                                </tr>
-                                <tr>
-                                    <td>NGÂN HÀNG - MB BANK</td>
-                                    <td class="text-center">0 VND</td>
-                                    <td class="text-center">0.5%</td>
-                                    <td class="text-center">1,000,000đ</td>
-                                </tr>
-                                <tr>
-                                    <td>NGÂN HÀNG - EXIMBANK</td>
-                                    <td class="text-center">0 VND</td>
-                                    <td class="text-center">0.5%</td>
-                                    <td class="text-center">1,000,000đ</td>
-                                </tr>
-                                <tr>
-                                    <td>NGÂN HÀNG - TECHCOMBANK</td>
-                                    <td class="text-center">0 VND</td>
-                                    <td class="text-center">0.5%</td>
-                                    <td class="text-center">1,000,000đ</td>
-                                </tr>
-                                <tr>
-                                    <td>NGÂN HÀNG - VIETBANK</td>
-                                    <td class="text-center">0 VND</td>
-                                    <td class="text-center">0.5%</td>
-                                    <td class="text-center">1,000,000đ</td>
-                                </tr>
-                                <tr>
-                                    <td>NGAN HANG TMCP HANG HAI VIET NAM (MSB)</td>
-                                    <td class="text-center">0 VND</td>
-                                    <td class="text-center">0.5%</td>
-                                    <td class="text-center">1,000,000đ</td>
-                                </tr>
-                                <tr>
-                                    <td>NGAN HANG TNHH MTV CIMB (CIMB)</td>
-                                    <td class="text-center">0 VND</td>
-                                    <td class="text-center">0.5%</td>
-                                    <td class="text-center">1,000,000đ</td>
-                                </tr>
-                                <tr>
-                                    <td>NGAN HANG TMCP QUOC TE VIB</td>
-                                    <td class="text-center">500 VND</td>
-                                    <td class="text-center">0%</td>
-                                    <td class="text-center"></td>
-                                </tr>
-                                <tr>
-                                    <td>TheSieuRe (Duyệt Chậm)</td>
-                                    <td class="text-center">5,000đ</td>
-                                    <td class="text-center">0%</td>
-                                    <td class="text-center"></td>
-                                </tr>
-                                <tr>
-                                    <td>NGÂN HÀNG OCB</td>
-                                    <td class="text-center">0 VND</td>
-                                    <td class="text-center">0.5%</td>
-                                    <td class="text-center"></td>
-                                </tr>
-                                <tr>
-                                    <td>NGÂN HÀNG - ACB</td>
-                                    <td class="text-center">0 VND</td>
-                                    <td class="text-center">0.5%</td>
-                                    <td class="text-center">1,000,000đ</td>
-                                </tr>
                                 <tr>
                                     <td>Ví Điện Tử MoMo</td>
                                     <td class="text-center">0 VND</td>
@@ -373,10 +319,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 mt-3">
+                <div class="col-12 mt-5">
                     <div class="section-heading_decor">
                         <div class="title">
-                            Rút tiền&nbsp;<span>gần đây</span>
+                            Nạp tiền&nbsp;<span>gần đây</span>
                         </div>
                     </div>
                     <div class="table-responsive">
@@ -387,13 +333,7 @@
                                     Thời gian
                                 </th>
                                 <th class="text-xs-nowrap">
-                                    Ví
-                                </th>
-                                <th class="text-xs-nowrap">
-                                    Số tài khoản
-                                </th>
-                                <th class="text-xs-nowrap">
-                                    Chủ tài khoản
+                                    Tài khoản nạp
                                 </th>
                                 <th class="text-xs-nowrap">
                                     Số tiền
@@ -401,70 +341,31 @@
                                 <th class="text-center text-xs-nowrap">
                                     Trạng thái
                                 </th>
-                                <th class="text-center text-xs-nowrap">
-                                    Hành động
-                                </th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
                                 <th>20:40 18/10/2022</th>
-                                <td>Momo</td>
-                                <td>090909090909</td>
-                                <td>Nguyễn Văn A</td>
+                                <td>Tên tài khoản nạp</td>
                                 <td>100,000 đồng</td>
                                 <td class="text-center">
                                     <div class="badge bg-success">Thành công</div>
                                 </td>
-                                <td class="text-center">
-                                    <a href="" class="btn btn-primary btn-sm my-1 mt-md-0 text-xs-nowrap">
-                                        <i class="fas fa-edit"></i>
-                                        Thay đổi
-                                    </a>
-                                    <a href="" class="btn btn-danger btn-sm my-1 mt-md-0 text-xs-nowrap">
-                                        <i class="fas fa-trash-alt"></i>
-                                        Xóa
-                                    </a>
-                                </td>
                             </tr>
                             <tr>
                                 <th>20:40 18/10/2022</th>
-                                <td>Momo</td>
-                                <td>090909090909</td>
-                                <td>Nguyễn Văn A</td>
+                                <td>Tên tài khoản nạp</td>
                                 <td>100,000 đồng</td>
                                 <td class="text-center">
                                     <div class="badge bg-warning">Đang xử lý</div>
                                 </td>
-                                <td class="text-center">
-                                    <a href="" class="btn btn-primary btn-sm my-1 mt-md-0 text-xs-nowrap">
-                                        <i class="fas fa-edit"></i>
-                                        Thay đổi
-                                    </a>
-                                    <a href="" class="btn btn-danger btn-sm my-1 mt-md-0 text-xs-nowrap">
-                                        <i class="fas fa-trash-alt"></i>
-                                        Xóa
-                                    </a>
-                                </td>
                             </tr>
                             <tr>
                                 <th>20:40 18/10/2022</th>
-                                <td>Momo</td>
-                                <td>090909090909</td>
-                                <td>Nguyễn Văn A</td>
+                                <td>Tên tài khoản nạp</td>
                                 <td>100,000 đồng</td>
                                 <td class="text-center">
                                     <div class="badge bg-danger">Bị huỷ</div>
-                                </td>
-                                <td class="text-center">
-                                    <a href="" class="btn btn-primary btn-sm my-1 mt-md-0 text-xs-nowrap">
-                                        <i class="fas fa-edit"></i>
-                                        Thay đổi
-                                    </a>
-                                    <a href="" class="btn btn-danger btn-sm my-1 mt-md-0 text-xs-nowrap">
-                                        <i class="fas fa-trash-alt"></i>
-                                        Xóa
-                                    </a>
                                 </td>
                             </tr>
                             </tbody>
