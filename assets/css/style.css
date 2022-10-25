@@ -291,7 +291,7 @@
 	border: 0;
 	outline: none;
 	font-size: .95em;
-	padding: 10px 13px;
+	padding: 6px 10px;
 	border-radius: 4px;
 }
 
@@ -1612,10 +1612,16 @@
 		position: relative;
 		z-index: 2;
 		background-color: #fff;
+		padding: 5px 0;
 	}
 
 	.header .header-main .header-main_inner {
 		gap: 5px;
+	}
+
+	.header .header-users .button-theme_sm {
+		padding: 5px 10px;
+		font-size: .9em;
 	}
 
 	.header .header-users_item .header-users_item--dropdown > ul {
